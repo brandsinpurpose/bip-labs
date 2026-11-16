@@ -1,0 +1,1943 @@
+{
+ "schema": "lexicon-bank-v1",
+ "version": 1,
+ "last-writer": "claude-cowork",
+ "last-write": "2026-11-16T06:45:22Z",
+ "about": "One shared word bank for Trey's thinking labs. Each term is written once and tagged with the labs that use it; each lab shows its tagged terms. Started 2026-11-15 with the Reasoning lexicon (logic, argument, debate, rhetoric and philosophy's tools) and the Metacognitive lexicon. Philosophy as a subject (thinkers, schools) comes later.",
+ "entry_shape": {
+  "name": "the term",
+  "definition": "what it is, plain",
+  "distinction": "how it differs from the look-alike term",
+  "trigger": "when to reach for it",
+  "say_it": "one line showing how Trey would say it in a live exchange",
+  "variants": "other spellings or speech-to-text forms, so search finds it",
+  "status": "stub (named only) | draft (written, not approved) | approved (Trey said yes) | see-home (defined elsewhere, see home)",
+  "home": "only when the full entry lives in another bank - cognitive-lab-bank means BIP Obsidian/Learning/Cognitive Lab/Practice/_core-bank.json"
+ },
+ "tags": {
+  "reasoning": "Reasoning lexicon - logic, argument, debate, rhetoric, philosophy's tools",
+  "metacognition": "Metacognitive lexicon",
+  "cognitive-lab": "also in the Cognitive Lab bank"
+ },
+ "categories": [
+  {
+   "id": "arg-anatomy",
+   "domain": "reasoning",
+   "name": "Argument anatomy",
+   "holds": "The parts of an argument and who has to prove what."
+  },
+  {
+   "id": "arg-evaluation",
+   "domain": "reasoning",
+   "name": "Judging an argument",
+   "holds": "The words for whether an argument actually works."
+  },
+  {
+   "id": "deductive",
+   "domain": "reasoning",
+   "name": "Deductive logic",
+   "holds": "Reasoning where a true premise set guarantees the conclusion."
+  },
+  {
+   "id": "ampliative",
+   "domain": "reasoning",
+   "name": "Inductive and abductive reasoning",
+   "holds": "Reasoning that makes a conclusion more or less likely, including best-explanation arguments."
+  },
+  {
+   "id": "fallacy-formal",
+   "domain": "reasoning",
+   "name": "Formal fallacies",
+   "holds": "Errors in the shape of an argument, whatever it is about."
+  },
+  {
+   "id": "fallacy-relevance",
+   "domain": "reasoning",
+   "name": "Fallacies of relevance",
+   "holds": "Moves that answer something other than the argument."
+  },
+  {
+   "id": "fallacy-presumption",
+   "domain": "reasoning",
+   "name": "Fallacies of presumption",
+   "holds": "Moves that smuggle in what they need to prove."
+  },
+  {
+   "id": "fallacy-ambiguity",
+   "domain": "reasoning",
+   "name": "Fallacies of ambiguity",
+   "holds": "Moves that ride on a word or phrase meaning two things."
+  },
+  {
+   "id": "fallacy-induction",
+   "domain": "reasoning",
+   "name": "Fallacies of weak induction",
+   "holds": "Conclusions bigger than the evidence behind them."
+  },
+  {
+   "id": "fallacy-dialogue",
+   "domain": "reasoning",
+   "name": "Fallacies of exchange",
+   "holds": "Moves that break the rules of a fair back-and-forth."
+  },
+  {
+   "id": "meaning",
+   "domain": "reasoning",
+   "name": "Definition and meaning",
+   "holds": "How words, concepts and categories carry or lose meaning."
+  },
+  {
+   "id": "epistemology",
+   "domain": "reasoning",
+   "name": "Knowledge and justification",
+   "holds": "Philosophy's tools for what counts as knowing and having reasons."
+  },
+  {
+   "id": "dialectic",
+   "domain": "reasoning",
+   "name": "Dialectic and debate moves",
+   "holds": "The moves you make in a live exchange."
+  },
+  {
+   "id": "rhetoric",
+   "domain": "reasoning",
+   "name": "Persuasion and delivery",
+   "holds": "How an argument lands on a real listener."
+  },
+  {
+   "id": "self-check",
+   "domain": "reasoning",
+   "name": "Checking your own reasoning",
+   "holds": "Where argument meets metacognition - the biases and habits in your own head."
+  },
+  {
+   "id": "meta-knowledge",
+   "domain": "metacognition",
+   "name": "Metacognitive knowledge",
+   "holds": "What you know about how thinking works - yours, the task's, the strategy's."
+  },
+  {
+   "id": "meta-monitoring",
+   "domain": "metacognition",
+   "name": "Monitoring",
+   "holds": "Noticing where your thinking actually stands."
+  },
+  {
+   "id": "meta-control",
+   "domain": "metacognition",
+   "name": "Control and regulation",
+   "holds": "Deciding what to do about it - plan, switch, stop."
+  },
+  {
+   "id": "meta-evaluation",
+   "domain": "metacognition",
+   "name": "Evaluation and reflection",
+   "holds": "Looking back to improve the next run."
+  },
+  {
+   "id": "meta-states",
+   "domain": "metacognition",
+   "name": "Confidence, bias and load",
+   "holds": "The states that distort your read of your own thinking."
+  }
+ ],
+ "terms": [
+  {
+   "name": "Claim",
+   "category": "arg-anatomy",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Premise",
+   "category": "arg-anatomy",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Conclusion",
+   "category": "arg-anatomy",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Inference",
+   "category": "arg-anatomy",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Warrant",
+   "category": "arg-anatomy",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Hidden premise (enthymeme)",
+   "category": "arg-anatomy",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Burden of proof",
+   "category": "arg-anatomy",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Thesis",
+   "category": "arg-anatomy",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Objection",
+   "category": "arg-anatomy",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Rebuttal",
+   "category": "arg-anatomy",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Counterexample",
+   "category": "arg-anatomy",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Validity",
+   "category": "arg-evaluation",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Soundness",
+   "category": "arg-evaluation",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Inductive strength",
+   "category": "arg-evaluation",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Cogency",
+   "category": "arg-evaluation",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Relevance",
+   "category": "arg-evaluation",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Sufficiency",
+   "category": "arg-evaluation",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Acceptability",
+   "category": "arg-evaluation",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Deductive reasoning",
+   "category": "deductive",
+   "tags": [
+    "reasoning",
+    "cognitive-lab"
+   ],
+   "status": "see-home",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": [],
+   "home": "cognitive-lab-bank"
+  },
+  {
+   "name": "Syllogism",
+   "category": "deductive",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Modus ponens",
+   "category": "deductive",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Modus tollens",
+   "category": "deductive",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "draft",
+   "definition": "If P is true then Q is true. Q is not true. So P is not true.",
+   "distinction": "Affirming the consequent looks similar (if P then Q; Q is true; so P) but is invalid, because Q could be true for other reasons.",
+   "trigger": "Someone's view predicts something that isn't there.",
+   "say_it": "If your view were right, we'd expect to see X. We don't see X. So something in your view has to give.",
+   "variants": []
+  },
+  {
+   "name": "Contrapositive",
+   "category": "deductive",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Necessary condition",
+   "category": "deductive",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Sufficient condition",
+   "category": "deductive",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Law of non-contradiction",
+   "category": "deductive",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Law of excluded middle",
+   "category": "deductive",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Reductio ad absurdum",
+   "category": "deductive",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Inductive inference",
+   "category": "ampliative",
+   "tags": [
+    "reasoning",
+    "cognitive-lab"
+   ],
+   "status": "see-home",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": [],
+   "home": "cognitive-lab-bank"
+  },
+  {
+   "name": "Abductive inference",
+   "category": "ampliative",
+   "tags": [
+    "reasoning",
+    "cognitive-lab"
+   ],
+   "status": "see-home",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": [],
+   "home": "cognitive-lab-bank"
+  },
+  {
+   "name": "Inference to the best explanation",
+   "category": "ampliative",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Analogical argument",
+   "category": "ampliative",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Cumulative case",
+   "category": "ampliative",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Explanatory power",
+   "category": "ampliative",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Explanatory scope",
+   "category": "ampliative",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Ad hoc hypothesis",
+   "category": "ampliative",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Ockham's razor",
+   "category": "ampliative",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Plausibility",
+   "category": "ampliative",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Affirming the consequent",
+   "category": "fallacy-formal",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Denying the antecedent",
+   "category": "fallacy-formal",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Undistributed middle",
+   "category": "fallacy-formal",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Non sequitur",
+   "category": "fallacy-formal",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Ad hominem",
+   "category": "fallacy-relevance",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Tu quoque",
+   "category": "fallacy-relevance",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Genetic fallacy",
+   "category": "fallacy-relevance",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "draft",
+   "definition": "Judging a belief true or false by where it came from instead of by the reasons for it.",
+   "distinction": "Ad hominem attacks the person arguing; the genetic fallacy attacks the belief's origin. Origin does matter when the question is whether a source can be trusted.",
+   "trigger": "A view gets dismissed because of who taught it or how someone came to hold it.",
+   "say_it": "Where I picked up the belief doesn't tell you if it's true. Give me a reason it's false.",
+   "variants": []
+  },
+  {
+   "name": "Red herring",
+   "category": "fallacy-relevance",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Appeal to emotion",
+   "category": "fallacy-relevance",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Appeal to popularity",
+   "category": "fallacy-relevance",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Appeal to ridicule",
+   "category": "fallacy-relevance",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Begging the question",
+   "category": "fallacy-presumption",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Loaded question",
+   "category": "fallacy-presumption",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "False dilemma",
+   "category": "fallacy-presumption",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Special pleading",
+   "category": "fallacy-presumption",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Moving the goalposts",
+   "category": "fallacy-presumption",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "No true Scotsman",
+   "category": "fallacy-presumption",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Equivocation",
+   "category": "fallacy-ambiguity",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Amphiboly",
+   "category": "fallacy-ambiguity",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Fallacy of composition",
+   "category": "fallacy-ambiguity",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Fallacy of division",
+   "category": "fallacy-ambiguity",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Hasty generalization",
+   "category": "fallacy-induction",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Slippery slope",
+   "category": "fallacy-induction",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "False cause",
+   "category": "fallacy-induction",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Misused appeal to authority",
+   "category": "fallacy-induction",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Cherry-picking",
+   "category": "fallacy-induction",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Strawman",
+   "category": "fallacy-dialogue",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Burden shifting",
+   "category": "fallacy-dialogue",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Argument from ignorance",
+   "category": "fallacy-dialogue",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Gish gallop",
+   "category": "fallacy-dialogue",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Lexical definition",
+   "category": "meaning",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Stipulative definition",
+   "category": "meaning",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Definitional dispute",
+   "category": "meaning",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Category error",
+   "category": "meaning",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Ambiguity vs vagueness",
+   "category": "meaning",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Univocal, equivocal and analogical language",
+   "category": "meaning",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Denotation and connotation",
+   "category": "meaning",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Epistemology",
+   "category": "epistemology",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Justification",
+   "category": "epistemology",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Evidence",
+   "category": "epistemology",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Presupposition",
+   "category": "epistemology",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Worldview",
+   "category": "epistemology",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Foundationalism",
+   "category": "epistemology",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Properly basic belief",
+   "category": "epistemology",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Certainty vs confidence",
+   "category": "epistemology",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Self-refuting claim",
+   "category": "epistemology",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Correspondence theory of truth",
+   "category": "epistemology",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Skepticism",
+   "category": "epistemology",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Steelman",
+   "category": "dialectic",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Principle of charity",
+   "category": "dialectic",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Concession",
+   "category": "dialectic",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Turn (turnaround)",
+   "category": "dialectic",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Internal critique",
+   "category": "dialectic",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Cross-examination",
+   "category": "dialectic",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Clarifying question",
+   "category": "dialectic",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Socratic questioning",
+   "category": "dialectic",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Framing",
+   "category": "dialectic",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Reframing",
+   "category": "dialectic",
+   "tags": [
+    "reasoning",
+    "cognitive-lab"
+   ],
+   "status": "see-home",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": [],
+   "home": "cognitive-lab-bank"
+  },
+  {
+   "name": "Common ground",
+   "category": "dialectic",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Ethos",
+   "category": "rhetoric",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Pathos",
+   "category": "rhetoric",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Logos",
+   "category": "rhetoric",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Kairos",
+   "category": "rhetoric",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Audience",
+   "category": "rhetoric",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Signposting",
+   "category": "rhetoric",
+   "tags": [
+    "reasoning"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Confirmation bias",
+   "category": "self-check",
+   "tags": [
+    "reasoning",
+    "metacognition"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Motivated reasoning",
+   "category": "self-check",
+   "tags": [
+    "reasoning",
+    "metacognition"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Belief revision",
+   "category": "self-check",
+   "tags": [
+    "reasoning",
+    "metacognition"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Intellectual honesty",
+   "category": "self-check",
+   "tags": [
+    "reasoning",
+    "metacognition"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Metacognition",
+   "category": "meta-knowledge",
+   "tags": [
+    "metacognition"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Person knowledge",
+   "category": "meta-knowledge",
+   "tags": [
+    "metacognition"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Task knowledge",
+   "category": "meta-knowledge",
+   "tags": [
+    "metacognition"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Strategy knowledge",
+   "category": "meta-knowledge",
+   "tags": [
+    "metacognition"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Conditional knowledge",
+   "category": "meta-knowledge",
+   "tags": [
+    "metacognition"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Metacognitive monitoring",
+   "category": "meta-monitoring",
+   "tags": [
+    "metacognition",
+    "cognitive-lab"
+   ],
+   "status": "see-home",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": [],
+   "home": "cognitive-lab-bank"
+  },
+  {
+   "name": "Feeling of knowing",
+   "category": "meta-monitoring",
+   "tags": [
+    "metacognition"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Judgment of learning",
+   "category": "meta-monitoring",
+   "tags": [
+    "metacognition"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Confidence judgment",
+   "category": "meta-monitoring",
+   "tags": [
+    "metacognition"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Calibration",
+   "category": "meta-monitoring",
+   "tags": [
+    "metacognition"
+   ],
+   "status": "draft",
+   "definition": "How well your confidence matches how often you turn out to be right.",
+   "distinction": "Confidence is how sure you feel. Calibration is whether that feeling tracks reality over many calls.",
+   "trigger": "Before stating something as certain, or after being wrong while you felt sure.",
+   "say_it": "I'm about seventy percent on this, not a hundred, and here's what would move me.",
+   "variants": []
+  },
+  {
+   "name": "Illusion of competence (fluency illusion)",
+   "category": "meta-monitoring",
+   "tags": [
+    "metacognition"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Comprehension monitoring",
+   "category": "meta-monitoring",
+   "tags": [
+    "metacognition"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Error detection",
+   "category": "meta-monitoring",
+   "tags": [
+    "metacognition"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Metacognitive regulation",
+   "category": "meta-control",
+   "tags": [
+    "metacognition",
+    "cognitive-lab"
+   ],
+   "status": "see-home",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": [],
+   "home": "cognitive-lab-bank"
+  },
+  {
+   "name": "Planning",
+   "category": "meta-control",
+   "tags": [
+    "metacognition"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Strategy selection",
+   "category": "meta-control",
+   "tags": [
+    "metacognition"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Strategy switching",
+   "category": "meta-control",
+   "tags": [
+    "metacognition"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Effort allocation",
+   "category": "meta-control",
+   "tags": [
+    "metacognition"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Stopping rule",
+   "category": "meta-control",
+   "tags": [
+    "metacognition"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Self-explanation",
+   "category": "meta-control",
+   "tags": [
+    "metacognition"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Debiasing",
+   "category": "meta-control",
+   "tags": [
+    "metacognition"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Reflection",
+   "category": "meta-evaluation",
+   "tags": [
+    "metacognition"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "After-action review",
+   "category": "meta-evaluation",
+   "tags": [
+    "metacognition"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Transfer",
+   "category": "meta-evaluation",
+   "tags": [
+    "metacognition"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Overconfidence",
+   "category": "meta-states",
+   "tags": [
+    "metacognition"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Underconfidence",
+   "category": "meta-states",
+   "tags": [
+    "metacognition"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Dunning-Kruger effect",
+   "category": "meta-states",
+   "tags": [
+    "metacognition"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Hindsight bias",
+   "category": "meta-states",
+   "tags": [
+    "metacognition"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Need for closure",
+   "category": "meta-states",
+   "tags": [
+    "metacognition"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  },
+  {
+   "name": "Cognitive load",
+   "category": "meta-states",
+   "tags": [
+    "metacognition"
+   ],
+   "status": "stub",
+   "definition": "",
+   "distinction": "",
+   "trigger": "",
+   "say_it": "",
+   "variants": []
+  }
+ ]
+}
