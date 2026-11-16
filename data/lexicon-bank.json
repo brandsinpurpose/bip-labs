@@ -1,8 +1,8 @@
 {
  "schema": "lexicon-bank-v1",
- "version": 1,
+ "version": 2,
  "last-writer": "claude-cowork",
- "last-write": "2026-11-16T06:45:22Z",
+ "last-write": "2026-11-16T08:05:22Z",
  "about": "One shared word bank for Trey's thinking labs. Each term is written once and tagged with the labs that use it; each lab shows its tagged terms. Started 2026-11-15 with the Reasoning lexicon (logic, argument, debate, rhetoric and philosophy's tools) and the Metacognitive lexicon. Philosophy as a subject (thinkers, schools) comes later.",
  "entry_shape": {
   "name": "the term",
@@ -148,12 +148,16 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "A statement someone puts forward as true and that can be argued for or against.",
+   "distinction": "A thesis is the main claim a whole case defends; a claim can be any statement in the exchange, including small supporting ones.",
+   "trigger": "Someone says something with confidence and you need to pin down exactly what they're asserting before you respond.",
+   "say_it": "Okay, so what's the actual claim here? Say it in one sentence and I'll tell you if I disagree.",
+   "variants": [
+    "assertion",
+    "proposition",
+    "claims"
+   ]
   },
   {
    "name": "Premise",
@@ -161,12 +165,17 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "A statement offered as a reason or support for a conclusion in an argument.",
+   "distinction": "A conclusion is what the argument tries to establish; a premise is what it's built on. The same statement can be a premise in one argument and a conclusion in another.",
+   "trigger": "Someone's conclusion seems off and you want to find which supporting statement is the weak link.",
+   "say_it": "I'm with you on the first part, but that second thing you're assuming, I don't grant that one.",
+   "variants": [
+    "premises",
+    "premiss",
+    "primus",
+    "assumption"
+   ]
   },
   {
    "name": "Conclusion",
@@ -174,12 +183,16 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "The statement an argument is trying to prove, supported by its premises.",
+   "distinction": "A thesis is the conclusion of an entire case or essay; a conclusion can be the endpoint of any single argument, including small steps inside a bigger case.",
+   "trigger": "A long reply wanders and you can't tell what the other person wants you to end up believing.",
+   "say_it": "Where are you trying to land with this? What should I walk away believing?",
+   "variants": [
+    "conclusions",
+    "the point",
+    "bottom line"
+   ]
   },
   {
    "name": "Inference",
@@ -187,12 +200,17 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "The step of reasoning from premises to a conclusion, the move that says because these are true, this follows.",
+   "distinction": "An implication is a logical relation between statements that holds whether anyone notices it or not; an inference is the act or step of drawing the conclusion.",
+   "trigger": "You agree with every fact someone lists but the conclusion they jump to doesn't seem to follow from them.",
+   "say_it": "I'll give you all of that. I just don't see how you get from there to here.",
+   "variants": [
+    "inferences",
+    "infer",
+    "implication",
+    "deduction step"
+   ]
   },
   {
    "name": "Warrant",
@@ -200,12 +218,17 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "In Toulmin's model, the often unstated general principle that connects the evidence to the claim and licenses the move between them.",
+   "distinction": "The grounds (data) are the specific evidence offered; the warrant is the rule that says why that evidence counts as support for the claim.",
+   "trigger": "Someone points to a fact as if it proves their point and you realize the rule linking the two hasn't been said out loud.",
+   "say_it": "Why does that fact make your point, though? What's the rule you're using to connect them?",
+   "variants": [
+    "Toulmin warrant",
+    "warrants",
+    "Toulmin model",
+    "backing"
+   ]
   },
   {
    "name": "Hidden premise (enthymeme)",
@@ -213,12 +236,21 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "An enthymeme is an argument with a premise left unstated; the hidden premise is that missing assumption the conclusion depends on.",
+   "distinction": "A false premise is stated and wrong; a hidden premise isn't stated at all, and may be true or false once you drag it into the open.",
+   "trigger": "An argument feels like it skips a step, and filling in that step reveals an assumption the person probably wouldn't defend.",
+   "say_it": "For that to work you'd also have to believe X. Do you actually believe X?",
+   "variants": [
+    "enthymeme",
+    "enthememe",
+    "enthymem",
+    "hidden premise",
+    "unstated premise",
+    "suppressed premise",
+    "missing premise",
+    "implicit premise"
+   ]
   },
   {
    "name": "Burden of proof",
@@ -226,12 +258,17 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "The obligation on a person who makes a claim to provide support for it, rather than requiring others to disprove it.",
+   "distinction": "Shifting the burden of proof is the fallacy of demanding the other side disprove your claim; the burden itself is the legitimate duty to support what you assert.",
+   "trigger": "Someone makes a bold claim and then tells you to prove them wrong.",
+   "say_it": "Hold on, you're the one saying it's true. I don't have to disprove it before you've shown me anything.",
+   "variants": [
+    "onus probandi",
+    "burden of truth",
+    "onus",
+    "shifting the burden"
+   ]
   },
   {
    "name": "Thesis",
@@ -239,12 +276,18 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "The central claim a whole argument, essay, or debate case is built to defend.",
+   "distinction": "A claim can be any statement made along the way; the thesis is the one main claim everything else is supposed to serve.",
+   "trigger": "A conversation has sprawled into five side issues and you need to pull it back to the main question in dispute.",
+   "say_it": "Can we back up? The main thing I'm defending is X. Everything else is a side road.",
+   "variants": [
+    "central claim",
+    "main claim",
+    "position",
+    "thesis statement",
+    "theses"
+   ]
   },
   {
    "name": "Objection",
@@ -252,12 +295,16 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "A reason given against a claim or argument, meant to show it's false, unsupported, or flawed.",
+   "distinction": "A rebuttal is a response to an objection; the objection comes first and raises the problem, the rebuttal answers it.",
+   "trigger": "You see a real problem with someone's argument and want to raise it clearly before the conversation moves on.",
+   "say_it": "Here's my problem with that, and tell me if I'm missing something.",
+   "variants": [
+    "objections",
+    "counterargument",
+    "challenge"
+   ]
   },
   {
    "name": "Rebuttal",
@@ -265,12 +312,17 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "A response that answers an objection, defending the original claim by showing the objection fails or doesn't apply.",
+   "distinction": "Refutation means successfully disproving something; a rebuttal is the attempt to answer, and it may or may not succeed.",
+   "trigger": "Someone raises a challenge to your position and you need to answer it directly instead of restating your view.",
+   "say_it": "Fair point to raise. Here's why I don't think it sinks what I said.",
+   "variants": [
+    "rebuttals",
+    "rebut",
+    "refutation",
+    "reply to objection"
+   ]
   },
   {
    "name": "Counterexample",
@@ -278,12 +330,17 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "A specific case where the premises of a general claim or argument hold but the conclusion is false, showing the claim or argument fails.",
+   "distinction": "An objection can be any reason against a view; a counterexample is one concrete case that breaks a universal claim or shows an argument form is invalid.",
+   "trigger": "Someone says all, always, or never, and you can think of one clear case that doesn't fit.",
+   "say_it": "If that's true of everyone, how do you explain this one guy who...?",
+   "variants": [
+    "counter example",
+    "counter-example",
+    "counterexamples",
+    "exception"
+   ]
   },
   {
    "name": "Validity",
@@ -291,12 +348,17 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "A property of deductive arguments: an argument is valid if it's impossible for all its premises to be true while the conclusion is false.",
+   "distinction": "Soundness requires validity plus true premises; a valid argument can still have false premises and a false conclusion.",
+   "trigger": "Someone's premises are shaky but the logic connecting them is fine, or the premises are fine and the logic is broken, and you need to say which.",
+   "say_it": "If I grant everything you said, does the conclusion really have to follow? I don't think it does.",
+   "variants": [
+    "valid",
+    "valid argument",
+    "logical validity",
+    "deductive validity"
+   ]
   },
   {
    "name": "Soundness",
@@ -304,12 +366,16 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "A deductive argument is sound when it's valid and all of its premises are actually true, which guarantees a true conclusion.",
+   "distinction": "Validity is only about structure; soundness adds that the premises really are true.",
+   "trigger": "Someone's logic checks out and you need to move the fight to whether their starting points are true.",
+   "say_it": "Yeah, the logic works. The question is whether your second premise is actually true.",
+   "variants": [
+    "sound",
+    "sound argument",
+    "sound vs valid"
+   ]
   },
   {
    "name": "Inductive strength",
@@ -317,12 +383,17 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "How likely an argument's conclusion is, assuming its premises are true. Strong inductive arguments make the conclusion probable, though never guaranteed.",
+   "distinction": "Validity is all-or-nothing and guarantees the conclusion; inductive strength comes in degrees and only makes the conclusion more or less likely.",
+   "trigger": "Someone draws a general conclusion from examples or evidence and you're weighing how much the evidence really supports it.",
+   "say_it": "Three cases is something, sure. But I'd want a lot more before I'd bet on it.",
+   "variants": [
+    "strong argument",
+    "weak argument",
+    "inductive argument",
+    "induction strength"
+   ]
   },
   {
    "name": "Cogency",
@@ -330,12 +401,17 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "An inductive argument is cogent when it's strong and its premises are true. In informal logic it can also mean premises are acceptable, relevant, and sufficient.",
+   "distinction": "Soundness is the deductive version of good; cogency is the inductive version, where the conclusion is probable rather than guaranteed.",
+   "trigger": "An argument can't prove its point with certainty and you need to judge whether it still gives good reason to believe it.",
+   "say_it": "It doesn't prove it a hundred percent, but the evidence is solid and points one way. That's a good argument.",
+   "variants": [
+    "cogent",
+    "cogent argument",
+    "coagency",
+    "cojency"
+   ]
   },
   {
    "name": "Relevance",
@@ -343,12 +419,17 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "A premise is relevant when its truth actually bears on whether the conclusion is true, giving some reason for or against it.",
+   "distinction": "Sufficiency asks whether the premises give enough support; relevance asks whether they give any support at all.",
+   "trigger": "Someone answers your point with something true that has nothing to do with the question.",
+   "say_it": "That might be true, but how's it connected to what we're actually arguing about?",
+   "variants": [
+    "relevant",
+    "relevance criterion",
+    "RSA",
+    "irrelevant"
+   ]
   },
   {
    "name": "Sufficiency",
@@ -356,12 +437,17 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "Premises are sufficient when, taken together, they give enough support to justify accepting the conclusion.",
+   "distinction": "Relevance only asks whether a premise bears on the conclusion; sufficiency asks whether all the relevant support adds up to enough.",
+   "trigger": "Everything someone offers is on topic, but it's thin and the conclusion is big.",
+   "say_it": "I don't doubt any of that. I just don't think it's enough to carry a conclusion that size.",
+   "variants": [
+    "sufficient",
+    "sufficiency criterion",
+    "RSA",
+    "enough evidence"
+   ]
   },
   {
    "name": "Acceptability",
@@ -369,12 +455,16 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "A premise is acceptable when the audience has good reason to grant it, because it's well supported, common knowledge, or not reasonably disputed.",
+   "distinction": "Truth is about how things are; acceptability is about whether a reasonable listener should grant the premise given what they know.",
+   "trigger": "An argument rests on a premise your listener has no reason to accept yet.",
+   "say_it": "Why should anyone here just grant that? You'd have to back that part up first.",
+   "variants": [
+    "acceptable",
+    "acceptability criterion",
+    "RSA"
+   ]
   },
   {
    "name": "Deductive reasoning",
@@ -397,12 +487,18 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "A deductive argument with two premises and a conclusion, classically linking three terms, as in all men are mortal, Socrates is a man, so Socrates is mortal.",
+   "distinction": "Modus ponens and modus tollens are forms built on if-then statements; a classic categorical syllogism links categories using all, some, and no.",
+   "trigger": "You want to lay an argument out in its tightest form so everyone can see exactly which premise to attack.",
+   "say_it": "Let me lay it out simple. All A are B, this is an A, so it's a B. Which part do you reject?",
+   "variants": [
+    "syllogisms",
+    "sillogism",
+    "silogism",
+    "categorical syllogism",
+    "syllogistic"
+   ]
   },
   {
    "name": "Modus ponens",
@@ -410,12 +506,18 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "A valid form: if P then Q; P is true; so Q is true.",
+   "distinction": "Affirming the consequent looks similar (if P then Q; Q; so P) but is invalid, because Q might be true for some other reason.",
+   "trigger": "Someone accepts a rule and also accepts the condition, but won't accept the result.",
+   "say_it": "You agreed if P then Q. You just agreed P. So you're stuck with Q.",
+   "variants": [
+    "modus ponendo ponens",
+    "affirming the antecedent",
+    "modus ponen",
+    "modus phonens",
+    "MP"
+   ]
   },
   {
    "name": "Modus tollens",
@@ -436,12 +538,17 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "The contrapositive of if P then Q is if not Q then not P. The two always have the same truth value.",
+   "distinction": "The converse (if Q then P) and the inverse (if not P then not Q) can be false even when the original is true; only the contrapositive is guaranteed to match.",
+   "trigger": "Someone flips an if-then statement around and treats the flipped version as if it means the same thing.",
+   "say_it": "If it's true that X leads to Y, then no Y means no X. It doesn't mean Y always comes from X.",
+   "variants": [
+    "contraposition",
+    "contra positive",
+    "converse",
+    "inverse"
+   ]
   },
   {
    "name": "Necessary condition",
@@ -449,12 +556,17 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "A condition that must be present for something to be true or happen; without it, the thing can't occur, though having it doesn't guarantee the thing.",
+   "distinction": "A sufficient condition guarantees the outcome on its own; a necessary condition is only required, not enough by itself.",
+   "trigger": "Someone treats a requirement as if meeting it settles the question.",
+   "say_it": "Sure, you need that. But needing it and it being enough are two different things.",
+   "variants": [
+    "necessary",
+    "required condition",
+    "only if",
+    "necessary but not sufficient"
+   ]
   },
   {
    "name": "Sufficient condition",
@@ -462,12 +574,17 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "A condition that guarantees something is true or happens; whenever it's present, the outcome follows.",
+   "distinction": "A necessary condition is required but may not be enough; a sufficient condition is enough on its own, though the outcome might also come about other ways.",
+   "trigger": "Someone argues that because the outcome happened, one particular cause must have been there.",
+   "say_it": "That would be enough to cause it, yeah, but it's not the only thing that could.",
+   "variants": [
+    "sufficient",
+    "enough condition",
+    "if then",
+    "sufficient but not necessary"
+   ]
   },
   {
    "name": "Law of non-contradiction",
@@ -475,12 +592,18 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "A statement and its denial can't both be true at the same time and in the same sense.",
+   "distinction": "The law of excluded middle says one of the two must be true; non-contradiction says they can't both be true.",
+   "trigger": "Someone holds two positions that directly cancel each other out, or says truth can be both ways at once.",
+   "say_it": "You said it's true, and then you said it isn't. Same thing, same sense. Which one do you mean?",
+   "variants": [
+    "non-contradiction",
+    "noncontradiction",
+    "LNC",
+    "principle of non-contradiction",
+    "law of contradiction"
+   ]
   },
   {
    "name": "Law of excluded middle",
@@ -488,12 +611,18 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "For any statement, either it or its denial is true; there's no third option for the same statement in the same sense.",
+   "distinction": "A false dilemma wrongly claims only two options exist among many; excluded middle applies only to a statement and its exact negation.",
+   "trigger": "Someone tries to dodge a yes-or-no question about a clearly defined claim by saying it's neither.",
+   "say_it": "Either God exists or He doesn't. You can be unsure which, but it's one of the two.",
+   "variants": [
+    "excluded middle",
+    "LEM",
+    "tertium non datur",
+    "principle of excluded middle",
+    "law of the excluded middle"
+   ]
   },
   {
    "name": "Reductio ad absurdum",
@@ -501,12 +630,19 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "Disproving a claim by assuming it's true and showing that it leads to a contradiction or an absurd result.",
+   "distinction": "A straw man distorts the other person's view; a fair reductio takes their actual view and follows it to where it really goes.",
+   "trigger": "Someone's principle sounds fine on its own but leads somewhere they'd never accept if you follow it out.",
+   "say_it": "Okay, let's run with that. If it's true, then you'd also have to say X, and I don't think you would.",
+   "variants": [
+    "reductio",
+    "reduction ad absurdum",
+    "reducto ad absurdum",
+    "reductio ad absurdem",
+    "proof by contradiction",
+    "reduce to absurdity"
+   ]
   },
   {
    "name": "Inductive inference",
@@ -544,12 +680,18 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "Reasoning to the hypothesis that best explains the evidence, judged by criteria such as explanatory power, scope, and plausibility, and accepting it as probably true.",
+   "distinction": "Deduction guarantees its conclusion; inference to the best explanation only picks the most likely explanation, which new evidence could overturn.",
+   "trigger": "You and someone else agree on the facts but disagree about what explains them.",
+   "say_it": "We both agree on what happened. So what explains it better, your story or mine?",
+   "variants": [
+    "IBE",
+    "abduction",
+    "abductive reasoning",
+    "best explanation",
+    "abductive inference"
+   ]
   },
   {
    "name": "Analogical argument",
@@ -557,12 +699,17 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "An argument that because two things are alike in known ways, they're probably alike in a further way too.",
+   "distinction": "A false analogy is the fallacy of comparing things that differ in the ways that matter; an analogical argument is legitimate when the shared features are relevant.",
+   "trigger": "Someone compares your view to something else, or you want to borrow a clear case to shed light on an unclear one.",
+   "say_it": "Sure, they're alike in some ways. But are they alike in the way that actually matters here?",
+   "variants": [
+    "argument from analogy",
+    "analogy",
+    "analogical reasoning",
+    "false analogy"
+   ]
   },
   {
    "name": "Cumulative case",
@@ -570,12 +717,17 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "An argument where several independent lines of evidence, each limited on its own, together make a conclusion more probable than any one line could.",
+   "distinction": "A chain argument fails if any one link breaks; in a cumulative case the strands work like cable wires, so one weak strand doesn't sink the whole.",
+   "trigger": "Someone knocks down one piece of your evidence and acts like your whole case is gone.",
+   "say_it": "Okay, set that one aside. There's still four other things pointing the same way, and you haven't touched those.",
+   "variants": [
+    "cumulative argument",
+    "cumulative case argument",
+    "cable argument",
+    "convergent argument"
+   ]
   },
   {
    "name": "Explanatory power",
@@ -583,12 +735,16 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "How well a hypothesis makes the evidence expected or probable, so that if it were true, what we observe is what we'd predict.",
+   "distinction": "Explanatory scope is about how much evidence a hypothesis covers; explanatory power is about how strongly it accounts for that evidence.",
+   "trigger": "Two explanations both fit the facts, but one makes the facts feel likely while the other just tolerates them.",
+   "say_it": "Your view can live with the evidence. Mine actually predicts it. Doesn't that count for something?",
+   "variants": [
+    "explanatory strength",
+    "power",
+    "McCullagh criteria"
+   ]
   },
   {
    "name": "Explanatory scope",
@@ -596,12 +752,16 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "How much of the relevant evidence a hypothesis accounts for; greater scope means it explains more of the data.",
+   "distinction": "Explanatory power is about how well a hypothesis explains its evidence; scope is about how wide a range of evidence it covers.",
+   "trigger": "Someone's explanation handles one fact neatly but leaves the rest of the evidence unexplained.",
+   "say_it": "That works for the empty tomb, maybe. What about the appearances, and the disciples changing? Your theory's got nothing for those.",
+   "variants": [
+    "scope",
+    "explanatory breadth",
+    "McCullagh criteria"
+   ]
   },
   {
    "name": "Ad hoc hypothesis",
@@ -609,12 +769,18 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "An assumption added to a theory only to save it from contrary evidence, with no independent reason to believe it.",
+   "distinction": "A legitimate auxiliary hypothesis has independent support or makes new testable predictions; an ad hoc one exists only to patch a hole.",
+   "trigger": "Every time you raise a problem, the other person invents a new assumption with no evidence just to get around it.",
+   "say_it": "Is there any reason to believe that besides the fact that your theory needs it?",
+   "variants": [
+    "ad hoc",
+    "adhoc",
+    "ad-hoc",
+    "ad hock",
+    "ad hoc rescue"
+   ]
   },
   {
    "name": "Ockham's razor",
@@ -622,12 +788,21 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "The principle that, other things being equal, the explanation with fewer unneeded assumptions or entities should be preferred.",
+   "distinction": "It's sometimes treated as the simplest-answer-is-always-true rule, which is a misreading. The razor only breaks ties between explanations that account for the evidence equally well.",
+   "trigger": "Someone piles on extra assumptions to explain something a leaner explanation already covers, or uses simplicity to shut down a better-supported view.",
+   "say_it": "If both explain it equally well, I'll take the one that needs fewer moving parts. But that's only if they're equal.",
+   "variants": [
+    "Occam's razor",
+    "Occams razor",
+    "Ockhams razor",
+    "law of parsimony",
+    "principle of parsimony",
+    "parsimony",
+    "Ocham's razor",
+    "Okham's razor"
+   ]
   },
   {
    "name": "Plausibility",
@@ -635,12 +810,18 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "How well a hypothesis fits with what we already have good reason to believe, apart from the specific evidence it explains.",
+   "distinction": "Probability is a broader overall estimate after all evidence; plausibility is about prior fit with background knowledge before weighing the case-specific evidence.",
+   "trigger": "Someone offers an explanation that technically fits the facts but clashes with everything else we know.",
+   "say_it": "I mean, it could explain it. But given everything else we know, how believable is that, honestly?",
+   "variants": [
+    "plausible",
+    "implausible",
+    "prior plausibility",
+    "background knowledge",
+    "McCullagh criteria"
+   ]
   },
   {
    "name": "Affirming the consequent",
@@ -648,12 +829,16 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "Reasoning that because a result showed up, the thing that would cause it must be true: if P then Q; Q; so P.",
+   "distinction": "Modus ponens is the valid look-alike (if P then Q; P; so Q). Affirming the consequent runs it backwards, ignoring that Q could have other causes.",
+   "trigger": "Someone points to a result their view predicts and treats it as proof their view is the only explanation.",
+   "say_it": "Okay, your view would produce that. So would a couple of others. What makes yours the one that did it?",
+   "variants": [
+    "affirming the consequence",
+    "converse error",
+    "fallacy of the converse"
+   ]
   },
   {
    "name": "Denying the antecedent",
@@ -661,12 +846,16 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "Reasoning that because a condition isn't met, its usual result can't happen: if P then Q; not P; so not Q.",
+   "distinction": "Modus tollens is the valid look-alike (if P then Q; not Q; so not P). Denying the antecedent forgets Q can come about without P.",
+   "trigger": "Someone argues that since one route to an outcome is closed, the outcome itself is impossible.",
+   "say_it": "Sure, that's one way it could happen. Taking that road away doesn't close every other road, though.",
+   "variants": [
+    "inverse error",
+    "fallacy of the inverse",
+    "denying the antecedant"
+   ]
   },
   {
    "name": "Undistributed middle",
@@ -674,12 +863,15 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "Linking two groups just because both share a trait: all A are C, all B are C, so all A are B. The shared term never covers the whole group.",
+   "distinction": "Guilt by association often runs on this shape, but undistributed middle is the bare logical form, whether or not anyone is being smeared.",
+   "trigger": "Someone says two things must be the same kind because they have one feature in common.",
+   "say_it": "Both have that in common, yeah. So do a lot of things. That doesn't make them the same thing.",
+   "variants": [
+    "fallacy of the undistributed middle",
+    "undistributed middle term"
+   ]
   },
   {
    "name": "Non sequitur",
@@ -687,12 +879,17 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "A conclusion that doesn't follow from the reasons given, even if the reasons and the conclusion are both true.",
+   "distinction": "A red herring changes the subject; a non sequitur stays on topic but the conclusion just isn't connected to the premises. Most formal fallacies are specific kinds of non sequitur.",
+   "trigger": "Someone gives a reason, then lands on a conclusion and you can't see the bridge between them.",
+   "say_it": "Walk me from that to this. I'm missing the step that gets you there.",
+   "variants": [
+    "non-sequitur",
+    "nonsequitur",
+    "non sequiter",
+    "it does not follow"
+   ]
   },
   {
    "name": "Ad hominem",
@@ -700,12 +897,18 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "Attacking the person making an argument, their character, motives or background, instead of the argument itself.",
+   "distinction": "A fair challenge to a witness's reliability is legitimate when the claim rests on their word, like a paid source testifying. Ad hominem rejects an argument that stands on its own reasons because of who said it.",
+   "trigger": "Someone answers your point by talking about you, your faith, your job or your motives, and the point itself goes untouched.",
+   "say_it": "Even if all that's true about me, the argument's still sitting there. What's wrong with it?",
+   "variants": [
+    "ad hominum",
+    "ad hom",
+    "argumentum ad hominem",
+    "personal attack",
+    "attacking the person"
+   ]
   },
   {
    "name": "Tu quoque",
@@ -713,12 +916,18 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "Dismissing a criticism by pointing out that the critic does the same thing, as if hypocrisy makes the claim false.",
+   "distinction": "Ad hominem attacks the person generally; tu quoque is the specific \"you do it too\" version. Pointing out inconsistency is fair when the question is someone's credibility or sincerity, but it can't settle whether the claim is true.",
+   "trigger": "Someone answers a criticism with \"well, your side does it too\" and never says whether the criticism is right.",
+   "say_it": "Fair, maybe I do. Then we're both wrong about it. Doesn't make you right.",
+   "variants": [
+    "too quoque",
+    "to quoque",
+    "you too fallacy",
+    "whataboutism",
+    "appeal to hypocrisy"
+   ]
   },
   {
    "name": "Genetic fallacy",
@@ -739,12 +948,17 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "Bringing up a different, often more interesting issue to pull the conversation away from the one actually being argued.",
+   "distinction": "A strawman distorts your argument and attacks the distortion; a red herring leaves your argument alone and just changes the subject.",
+   "trigger": "The conversation drifts to a new topic right when the original question was about to get a real answer.",
+   "say_it": "Hold on, we can get to that. You still haven't told me what you think about X.",
+   "variants": [
+    "red hering",
+    "changing the subject",
+    "diversion",
+    "smoke screen"
+   ]
   },
   {
    "name": "Appeal to emotion",
@@ -752,12 +966,19 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "Trying to win agreement by stirring up feelings like fear, pity or outrage in place of giving reasons the claim is true.",
+   "distinction": "Emotion is fine when it fits the facts, like grief over a real loss in a moral argument. It becomes a fallacy when the feeling is offered as the evidence itself.",
+   "trigger": "Someone responds to a factual question with a heartbreaking story or a scary picture and no actual argument.",
+   "say_it": "That story's awful, and I'm not brushing it off. I'm just asking whether it shows what you're saying it shows.",
+   "variants": [
+    "argumentum ad passiones",
+    "appeal to pity",
+    "ad misericordiam",
+    "appeal to fear",
+    "ad metum",
+    "emotional appeal"
+   ]
   },
   {
    "name": "Appeal to popularity",
@@ -765,12 +986,19 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "Claiming something is true or good because lots of people believe it or do it.",
+   "distinction": "Expert consensus in a field can be real evidence because those people checked the question. Popularity alone just counts heads, and crowds have been wrong plenty.",
+   "trigger": "Someone backs up a claim with \"everybody knows,\" polls, or how many followers agree.",
+   "say_it": "Lots of people believed a lot of things that turned out wrong. What's the reason behind it?",
+   "variants": [
+    "ad populum",
+    "argumentum ad populum",
+    "bandwagon",
+    "bandwagon fallacy",
+    "appeal to the masses",
+    "appeal to the majority"
+   ]
   },
   {
    "name": "Appeal to ridicule",
@@ -778,12 +1006,18 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "Making a view look silly or laughable so it gets dismissed without anyone actually answering it.",
+   "distinction": "Reductio ad absurdum is the legitimate cousin: it shows a view really leads to an absurd conclusion. Appeal to ridicule just mocks the view and skips that step.",
+   "trigger": "Someone answers your position with a sarcastic restatement, a meme or a laugh, and no counterargument.",
+   "say_it": "Ha, okay, it sounds goofy when you put it that way. Which part's actually wrong?",
+   "variants": [
+    "appeal to mockery",
+    "ad absurdo",
+    "horse laugh",
+    "the horse laugh",
+    "argumentum ad ridiculum"
+   ]
   },
   {
    "name": "Begging the question",
@@ -791,12 +1025,18 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "Assuming the very thing you're trying to prove somewhere in your premises, so the argument goes in a circle.",
+   "distinction": "Everyday speech uses \"begs the question\" to mean \"raises the question\"; that's a different thing. Also, every valid argument contains its conclusion in some sense; the fallacy is when a premise is only believable if you already accept the conclusion.",
+   "trigger": "Someone's reason for a claim is just the claim reworded, or a premise only someone already on their side would grant.",
+   "say_it": "That only works if I already agree with you. Give me something I can accept without that.",
+   "variants": [
+    "circular reasoning",
+    "circular argument",
+    "petitio principii",
+    "petitio principi",
+    "begs the question"
+   ]
   },
   {
    "name": "Loaded question",
@@ -804,12 +1044,17 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "A question built on an assumption the other person hasn't agreed to, so any direct answer seems to concede it.",
+   "distinction": "Leading questions push toward an answer but can be answered fairly; a loaded question traps you because both yes and no grant the hidden premise.",
+   "trigger": "You're asked a yes-or-no question where either answer would admit something you don't accept.",
+   "say_it": "I can't answer that straight, because the question assumes something I don't buy. Let's talk about that part first.",
+   "variants": [
+    "complex question",
+    "plurium interrogationum",
+    "trick question",
+    "have you stopped beating your wife"
+   ]
   },
   {
    "name": "False dilemma",
@@ -817,12 +1062,19 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "Presenting two options as the only possibilities when there are others, so rejecting one seems to force the other.",
+   "distinction": "Some choices really are binary, like a true contradiction (P or not P). The fallacy is treating a choice as either-or when middle or other options exist.",
+   "trigger": "Someone says \"either you accept A or you're stuck with B\" and you can think of a C.",
+   "say_it": "Why are those the only two? There's at least one more option on the table.",
+   "variants": [
+    "false dichotomy",
+    "either-or fallacy",
+    "either or fallacy",
+    "black-and-white thinking",
+    "false choice",
+    "bifurcation"
+   ]
   },
   {
    "name": "Special pleading",
@@ -830,12 +1082,17 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "Applying a rule to everyone else but exempting yourself or your case without giving a good reason for the exception.",
+   "distinction": "An exception is fine when a relevant difference justifies it, so the test is whether a real difference gets named. Saying God is uncaused because God isn't the kind of thing that begins is offered as that kind of reasoned exception; critics call it special pleading, so be ready to show the difference.",
+   "trigger": "Someone holds you to a standard and then waves it off when the same standard hits their own view.",
+   "say_it": "You used that rule on me a minute ago. Why doesn't it apply here?",
+   "variants": [
+    "special pleeding",
+    "double standard",
+    "stolen concept",
+    "ad hoc exemption"
+   ]
   },
   {
    "name": "Moving the goalposts",
@@ -843,12 +1100,16 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "Raising or changing the standard of evidence after it's been met, so the claim can never count as proven.",
+   "distinction": "Asking for clarification or more evidence in good faith isn't the fallacy; the problem is when the demand changes only because the first one was met.",
+   "trigger": "You meet the evidence someone asked for, and suddenly they need something different or bigger.",
+   "say_it": "A minute ago you said X would do it. I gave you X. What changed?",
+   "variants": [
+    "shifting the goalposts",
+    "moving the goal posts",
+    "raising the bar"
+   ]
   },
   {
    "name": "No true Scotsman",
@@ -856,12 +1117,17 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "Protecting a general claim from a counterexample by redefining the group to exclude it, without any independent reason.",
+   "distinction": "Saying someone isn't a real member of a group is legitimate when there's a clear prior definition they fail, like a stated creed. It's the fallacy when the definition gets made up on the spot just to dodge the counterexample.",
+   "trigger": "You give an example that breaks someone's generalization and they reply that it doesn't really count as one of the group.",
+   "say_it": "Okay, then what's the definition? And did you have it before I brought up that example?",
+   "variants": [
+    "no true scotsman fallacy",
+    "no-true-Scotsman",
+    "appeal to purity",
+    "no true scottsman"
+   ]
   },
   {
    "name": "Equivocation",
@@ -869,12 +1135,17 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "Using a word in two different senses within one argument, so the conclusion only works because the meaning quietly shifted.",
+   "distinction": "Amphiboly gets its ambiguity from sentence structure; equivocation gets it from a single word with two meanings, like \"theory\" in science versus everyday talk.",
+   "trigger": "A key word sounds the same throughout an argument but you notice it means something different at the end than at the start.",
+   "say_it": "Hang on, which meaning of that word are you using? Because it changed halfway through.",
+   "variants": [
+    "equivocation fallacy",
+    "equivication",
+    "double meaning",
+    "semantic shift"
+   ]
   },
   {
    "name": "Amphiboly",
@@ -882,12 +1153,17 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "An argument that relies on a sentence that can be read two ways because of its grammar or punctuation, sliding from one reading to the other.",
+   "distinction": "Equivocation hinges on one word's two meanings; amphiboly hinges on how the sentence is put together, like a misplaced modifier.",
+   "trigger": "Someone draws a conclusion from a sentence, a verse or a quote that only works under one of two grammatical readings.",
+   "say_it": "Read it again. It could mean what you said, but it could also mean the other thing, and the other one fits better.",
+   "variants": [
+    "amphibology",
+    "amphiboly fallacy",
+    "amphibole",
+    "syntactic ambiguity"
+   ]
   },
   {
    "name": "Fallacy of composition",
@@ -895,12 +1171,16 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "Concluding that a whole has a property because each of its parts has it.",
+   "distinction": "Division runs the other way, from whole to parts. Some properties do transfer to the whole, like weight, so it's only a fallacy when the property doesn't add up that way.",
+   "trigger": "Someone argues that since every piece of something has a trait, the whole thing must have it too.",
+   "say_it": "Each brick is light, sure. The wall isn't. You'd need to show this trait actually carries over.",
+   "variants": [
+    "composition fallacy",
+    "fallacy of compostion",
+    "part-to-whole error"
+   ]
   },
   {
    "name": "Fallacy of division",
@@ -908,12 +1188,16 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "Concluding that each part has a property because the whole has it.",
+   "distinction": "Composition is the mirror image, from parts to whole. Some properties do pass down, like being made of wood, so it's a fallacy only when the property belongs to the whole and not its parts.",
+   "trigger": "Someone assumes that because a group, church or company has a trait, every member of it shares that trait.",
+   "say_it": "The group might be like that. Doesn't mean every person in it is.",
+   "variants": [
+    "division fallacy",
+    "fallacy of devision",
+    "whole-to-part error"
+   ]
   },
   {
    "name": "Hasty generalization",
@@ -921,12 +1205,19 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "Drawing a broad conclusion from a sample that's too small or not representative.",
+   "distinction": "Generalizing from evidence is how induction works and is fine with a large, fair sample. It's the fallacy when one or two cases, often personal ones, stand in for everyone.",
+   "trigger": "Someone takes a story about one or two people and turns it into a claim about a whole group.",
+   "say_it": "That's one story, maybe two. How do you know it's how it usually goes?",
+   "variants": [
+    "hasty generalisation",
+    "overgeneralization",
+    "sweeping generalization",
+    "jumping to conclusions",
+    "secundum quid",
+    "anecdotal evidence"
+   ]
   },
   {
    "name": "Slippery slope",
@@ -934,12 +1225,18 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "Claiming one step will set off a chain of events ending in disaster, without showing why each link in the chain is likely.",
+   "distinction": "Slippery slope arguments are legitimate when each step's likelihood is backed by evidence or a clear mechanism, like precedent in law. It's the fallacy when the chain is just asserted.",
+   "trigger": "Someone says that allowing a small thing will inevitably lead to something extreme, with nothing tying the steps together.",
+   "say_it": "Maybe. What actually gets us from step one to step two, though? That's the part I'm not seeing.",
+   "variants": [
+    "slippery slope fallacy",
+    "slippery-slope",
+    "domino fallacy",
+    "thin end of the wedge",
+    "camel's nose"
+   ]
   },
   {
    "name": "False cause",
@@ -947,12 +1244,19 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "Concluding that one thing caused another just because they happened together or one came first.",
+   "distinction": "Correlation can be real evidence of causation once other explanations are ruled out. Common subtypes are post hoc (it came after, so it was caused) and cum hoc (they go together, so one caused the other).",
+   "trigger": "Someone treats two things showing up together, or one following the other, as proof that one caused the other.",
+   "say_it": "They line up, I'll give you that. Could something else be driving both of them?",
+   "variants": [
+    "post hoc",
+    "post hoc ergo propter hoc",
+    "cum hoc ergo propter hoc",
+    "questionable cause",
+    "non causa pro causa",
+    "correlation is not causation"
+   ]
   },
   {
    "name": "Misused appeal to authority",
@@ -960,12 +1264,19 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "Citing an authority as proof when they aren't an expert on that question, experts disagree, or their word is replacing evidence that's actually available.",
+   "distinction": "Relying on a real expert speaking in their field, where there's broad agreement, is legitimate and how most of us know most things. It goes wrong when the expert is out of their lane or the citation ends the discussion.",
+   "trigger": "Someone settles a question by quoting a famous name, especially one speaking outside their field.",
+   "say_it": "He's brilliant at physics, no argument. Is this a physics question, though?",
+   "variants": [
+    "appeal to authority",
+    "argument from authority",
+    "ad verecundiam",
+    "argumentum ad verecundiam",
+    "false authority",
+    "appeal to false authority"
+   ]
   },
   {
    "name": "Cherry-picking",
@@ -973,12 +1284,19 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "Pointing only to the evidence that supports your view while ignoring the evidence against it.",
+   "distinction": "Hasty generalization uses too little evidence; cherry-picking may use plenty but filters out whatever doesn't fit. Highlighting your strongest evidence is fine as long as you don't hide the rest.",
+   "trigger": "Someone quotes one study, verse or statistic and skips the others on the same question that point the other way.",
+   "say_it": "What about the ones that say the opposite? You've only shown me the half that helps you.",
+   "variants": [
+    "cherry picking",
+    "cherrypicking",
+    "suppressed evidence",
+    "fallacy of incomplete evidence",
+    "selective evidence",
+    "proof texting"
+   ]
   },
   {
    "name": "Strawman",
@@ -986,12 +1304,18 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "Restating someone's argument in a weaker or distorted form, then knocking down that version as if the real one were defeated.",
+   "distinction": "Steelmanning is the honest opposite: answering the strongest form of the view. A red herring changes the topic; a strawman stays on topic but swaps in a version that's easier to beat.",
+   "trigger": "Someone sums up your view in a way you'd never say it, then argues against that summary.",
+   "say_it": "That's not what I said. Here's what I actually think, so push on that one.",
+   "variants": [
+    "straw man",
+    "straw-man",
+    "strawmanning",
+    "straw man fallacy",
+    "strawmen"
+   ]
   },
   {
    "name": "Burden shifting",
@@ -999,12 +1323,18 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "Making a claim and then demanding the other person disprove it, instead of supporting it yourself.",
+   "distinction": "Asking someone to back up their own positive claim is fair, and so is asking a skeptic who asserts something is false. It's the fallacy when the person making the claim pushes their proof duty onto the doubter.",
+   "trigger": "Someone asserts something and, when you ask for support, they say \"prove me wrong.\"",
+   "say_it": "You brought it up, so it's on you to back it. I'm just asking how you know.",
+   "variants": [
+    "shifting the burden of proof",
+    "burden of proof fallacy",
+    "onus probandi",
+    "burden-shifting",
+    "burden of proof shifting"
+   ]
   },
   {
    "name": "Argument from ignorance",
@@ -1012,12 +1342,18 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "Claiming something is true because it hasn't been proven false, or false because it hasn't been proven true.",
+   "distinction": "Absence of evidence counts when we'd expect evidence if the claim were true, like a thorough search that turns up nothing. The fallacy treats a mere lack of proof as proof.",
+   "trigger": "Someone says \"you can't prove it didn't happen,\" or \"no one's shown it's real,\" as if that settles it.",
+   "say_it": "Nobody proving it wrong isn't the same as it being right. What's the positive case?",
+   "variants": [
+    "argumentum ad ignorantiam",
+    "ad ignorantiam",
+    "appeal to ignorance",
+    "god of the gaps",
+    "absence of evidence"
+   ]
   },
   {
    "name": "Gish gallop",
@@ -1025,12 +1361,19 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "Firing off so many weak claims so fast that the opponent can't answer them all, then treating the unanswered ones as wins.",
+   "distinction": "Making several strong points is fine; the gallop relies on volume, since debunking each claim takes far longer than making it.",
+   "trigger": "Someone drops a long list of objections in one comment or turn and claims victory on any you don't answer.",
+   "say_it": "That's a lot. Pick the one you think is strongest and let's go deep on that.",
+   "variants": [
+    "gish galop",
+    "gish gallup",
+    "gishgallop",
+    "firehose of falsehood",
+    "spreading",
+    "proof by verbosity"
+   ]
   },
   {
    "name": "Lexical definition",
@@ -1038,12 +1381,15 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "A report of how a word is actually used by speakers of a language, the kind a dictionary gives. Because it describes real usage, it can be accurate or inaccurate.",
+   "distinction": "A stipulative definition assigns a meaning for a purpose and can't be wrong; a lexical definition claims to describe existing usage, so it can be checked and found wrong.",
+   "trigger": "Someone insists a word \"really means\" something and you want to check whether anyone actually uses it that way.",
+   "say_it": "Hold on, is that what the word means, or what you need it to mean? Because most people use it to mean X.",
+   "variants": [
+    "reportive definition",
+    "dictionary definition"
+   ]
   },
   {
    "name": "Stipulative definition",
@@ -1051,12 +1397,15 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "A definition that assigns a meaning to a term for a particular discussion, either a new word or a narrower sense of an old one. It is judged as useful or not, rather than true or false.",
+   "distinction": "A lexical definition reports how a word is already used. Trouble starts when someone stipulates a meaning, then quietly trades on the ordinary meaning (sometimes called a persuasive definition).",
+   "trigger": "Someone defines a key word in a way that conveniently wins the argument before it starts.",
+   "say_it": "Okay, if you want faith to mean believing without evidence, we can use that for now - just know that's your definition, it isn't mine.",
+   "variants": [
+    "stipulated definition",
+    "working definition"
+   ]
   },
   {
    "name": "Definitional dispute",
@@ -1064,12 +1413,16 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "A disagreement that turns on what a word means rather than on the facts. Two people can seem to disagree while really using a key term in different senses.",
+   "distinction": "A substantive dispute is a disagreement about facts or values that would still be there after both sides agree on what the words mean.",
+   "trigger": "The argument keeps going in circles and you suspect you and the other person mean different things by the same word.",
+   "say_it": "Wait, I think we're using \"religion\" two different ways. What do you mean by it?",
+   "variants": [
+    "verbal dispute",
+    "merely verbal dispute",
+    "semantic dispute"
+   ]
   },
   {
    "name": "Category error",
@@ -1077,12 +1430,15 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "Treating something as if it belonged to a kind it doesn't belong to, so you assign it properties it couldn't have, like asking what color the number seven is. The term comes from Gilbert Ryle.",
+   "distinction": "Equivocation shifts a word's meaning partway through an argument; a category error misplaces the kind of thing being talked about, even if every word keeps one meaning.",
+   "trigger": "A question assumes God, a mind or a moral fact is the kind of thing that could be built, weighed or found the way a physical object is.",
+   "say_it": "Asking who made God kind of assumes he's the sort of thing that gets made. That's the part I'd question.",
+   "variants": [
+    "category mistake",
+    "category confusion"
+   ]
   },
   {
    "name": "Ambiguity vs vagueness",
@@ -1090,12 +1446,16 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "An ambiguous word or sentence has two or more distinct meanings, like \"bank.\" A vague term has one meaning with fuzzy edges, so there are borderline cases, like \"tall\" or \"bald.\"",
+   "distinction": "People treat these as the same problem, but ambiguity is fixed by picking a meaning, while vagueness is handled by setting a cutoff or admitting borderline cases. Equivocation, the fallacy, feeds on ambiguity specifically.",
+   "trigger": "A key term is doing slippery work and you need to say whether it has two meanings or just blurry edges.",
+   "say_it": "Is the issue that \"life\" means two things here, or that it's fuzzy at the edges? Cause those get fixed differently.",
+   "variants": [
+    "ambiguity",
+    "vagueness",
+    "ambiguous vs vague"
+   ]
   },
   {
    "name": "Univocal, equivocal and analogical language",
@@ -1103,12 +1463,19 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "A word is univocal when it means the same in two uses, equivocal when the meanings are unrelated, and analogical when they are related but proportioned, as Aquinas held for \"good\" said of God and creatures.",
+   "distinction": "Equivocation is the fallacy of sliding between unrelated meanings; analogical use is a deliberate middle path where the meanings are connected. Critics argue analogy collapses into one of the other two, so expect that pushback.",
+   "trigger": "Someone says that calling God \"good\" or \"loving\" must either mean exactly what it means for humans or mean nothing at all.",
+   "say_it": "When I say God's good, I don't mean it exactly like your neighbor's good, but I don't mean something totally unrelated either. It's analogical.",
+   "variants": [
+    "analogical predication",
+    "univocity",
+    "univocal",
+    "equivocal",
+    "analogy",
+    "analogical language"
+   ]
   },
   {
    "name": "Denotation and connotation",
@@ -1116,12 +1483,17 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "Denotation is what a word refers to, its literal meaning. Connotation is the associations and feelings the word carries. \"Cult\" and \"new religious movement\" can denote the same group and connote very different things.",
+   "distinction": "Loaded language is the move that exploits connotation to argue without giving reasons; the denotation and connotation distinction is the tool that lets you spot it.",
+   "trigger": "Someone picks a word for its emotional charge, like \"indoctrination\" for teaching, and the label is doing the arguing.",
+   "say_it": "\"Indoctrinate\" and \"teach\" are pointing at the same thing here. So what's actually wrong with what's being taught?",
+   "variants": [
+    "denotative",
+    "connotative",
+    "denotation",
+    "connotation"
+   ]
   },
   {
    "name": "Epistemology",
@@ -1129,12 +1501,17 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "The branch of philosophy that studies knowledge: what it is, how we get it, and what makes a belief justified or rational to hold.",
+   "distinction": "Metaphysics (including ontology) asks what exists and what it's like; epistemology asks how we know anything about what exists.",
+   "trigger": "The debate stalls because you disagree about what counts as knowing something, and that question sits upstream of the actual topic.",
+   "say_it": "I think we're actually stuck on epistemology. How do you think we know stuff in general?",
+   "variants": [
+    "epistemic",
+    "epistemological",
+    "theory of knowledge",
+    "epistimology"
+   ]
   },
   {
    "name": "Justification",
@@ -1142,12 +1519,16 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "What makes a belief reasonable to hold: the reasons, evidence or reliable process behind it. On the classic analysis, knowledge is justified true belief, though Gettier cases complicate that.",
+   "distinction": "Truth is a separate question: a belief can be justified and still false, or true and held for no good reason.",
+   "trigger": "Someone holds a belief that might be true, and you want to know what's actually holding it up.",
+   "say_it": "Maybe you're right. I'm just asking what your reason is for believing it.",
+   "variants": [
+    "epistemic justification",
+    "justified true belief",
+    "JTB"
+   ]
   },
   {
    "name": "Evidence",
@@ -1155,12 +1536,15 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "Anything that makes a claim more or less likely to be true than it would be otherwise: observations, testimony, documents, arguments.",
+   "distinction": "Proof in the strict sense settles a question; evidence only raises or lowers the probability. People who demand \"proof\" often mean evidence, and people who say \"no evidence\" often mean no proof.",
+   "trigger": "Someone says \"there's no evidence\" when they mean there's no proof, or treats lab science as the only kind of evidence there is.",
+   "say_it": "There's a difference between no evidence and evidence you don't find convincing. Which one are you saying?",
+   "variants": [
+    "evidential",
+    "evidentiary"
+   ]
   },
   {
    "name": "Presupposition",
@@ -1168,12 +1552,16 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "Something a claim, question or argument takes for granted, which has to be true for it to make sense. \"Have you stopped lying?\" presupposes that you lied.",
+   "distinction": "Begging the question smuggles the conclusion itself into a premise. Every argument has presuppositions; it only becomes a problem when the presupposition is the very thing in dispute.",
+   "trigger": "A question or claim quietly assumes the thing you two are actually arguing about.",
+   "say_it": "Your question kind of assumes X already. Can we look at that part first?",
+   "variants": [
+    "presuppose",
+    "presupposed",
+    "presuppositional"
+   ]
   },
   {
    "name": "Worldview",
@@ -1181,12 +1569,16 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "A person's overall framework of basic beliefs about reality, knowledge, value and meaning, through which they interpret everything else. From the German Weltanschauung.",
+   "distinction": "An ideology is usually narrower, often a political or social program; a worldview is the whole background picture, including what you count as real and as evidence.",
+   "trigger": "Two people keep reading the same facts in opposite ways and you want to surface the background beliefs doing that.",
+   "say_it": "We're looking at the same facts and landing in different places, so I think our worldviews are doing the work. Mind if we put those on the table?",
+   "variants": [
+    "world view",
+    "world-view",
+    "Weltanschauung"
+   ]
   },
   {
    "name": "Foundationalism",
@@ -1194,12 +1586,16 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "The view that justified beliefs are structured like a building: some basic beliefs are justified without resting on other beliefs, and every other belief is justified by resting on those.",
+   "distinction": "Coherentism holds instead that beliefs are justified by fitting together in a mutually supporting web, with no privileged foundation.",
+   "trigger": "Someone demands a reason for every reason, and you need to talk about whether the chain of justification has to stop somewhere.",
+   "say_it": "If every belief needs another belief behind it, we never get started. So where do you think the chain stops?",
+   "variants": [
+    "foundationalist",
+    "foundational beliefs",
+    "classical foundationalism"
+   ]
   },
   {
    "name": "Properly basic belief",
@@ -1207,12 +1603,16 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "In Reformed epistemology (Alvin Plantinga), a belief rational to hold without inferring it from other beliefs, like belief in other minds. Plantinga argues belief in God can be one; critics dispute this.",
+   "distinction": "Fideism holds faith apart from or above reason; a properly basic belief is presented as rational and grounded in experience, and it can still be overturned by good counter-evidence (defeaters).",
+   "trigger": "Someone says belief in God is irrational unless it's backed by an argument.",
+   "say_it": "You don't believe other people have minds because somebody gave you an argument, right? Some beliefs are reasonable without one, and I'd put this one there.",
+   "variants": [
+    "properly basic",
+    "basic belief",
+    "Reformed epistemology"
+   ]
   },
   {
    "name": "Certainty vs confidence",
@@ -1220,12 +1620,16 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "Certainty means there's no possible room for doubt. Confidence is how strongly you believe something, which can be high without being total.",
+   "distinction": "Knowledge in the ordinary sense doesn't require certainty, so \"you can't be certain\" is a much weaker objection than \"you can't know\" or \"you have no good reason.\"",
+   "trigger": "Someone dismisses your view because you can't be a hundred percent sure, or you catch yourself overclaiming.",
+   "say_it": "No, I'm not certain. I don't really need to be - I'm confident enough to act on it, same as you are about most things.",
+   "variants": [
+    "certitude",
+    "credence",
+    "degree of belief"
+   ]
   },
   {
    "name": "Self-refuting claim",
@@ -1233,12 +1637,17 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "A statement that, if true, would make itself false or undercut its own grounds, like \"there is no truth\" or \"only scientifically testable claims are meaningful.\"",
+   "distinction": "A contradiction is a clash between two claims; a self-refuting claim clashes with itself when you apply it to itself.",
+   "trigger": "Someone states a sweeping rule about truth or knowledge that would also apply to their own statement.",
+   "say_it": "Is that statement scientifically testable, though? Cause if it isn't, it kind of rules itself out.",
+   "variants": [
+    "self-defeating",
+    "self-defeating claim",
+    "self-referential incoherence",
+    "self-stultifying"
+   ]
   },
   {
    "name": "Correspondence theory of truth",
@@ -1246,12 +1655,16 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "The view that a statement is true when it matches, or corresponds to, the way reality actually is.",
+   "distinction": "The coherence theory says truth is fitting into a consistent system of beliefs, and the pragmatic theory ties truth to what works in practice.",
+   "trigger": "Someone says \"that's true for you\" and you need to pin down what you both mean by \"true.\"",
+   "say_it": "When I say it's true I mean it matches what's actually out there. Is that what you mean too, or something else?",
+   "variants": [
+    "correspondence theory",
+    "correspondence view",
+    "truth as correspondence"
+   ]
   },
   {
    "name": "Skepticism",
@@ -1259,12 +1672,18 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "In philosophy, the position that we lack knowledge, or can't have it, in some area or across the board. It ranges from local doubts about one subject to global doubt about everything.",
+   "distinction": "Everyday skepticism just means being cautious and wanting evidence; philosophical skepticism questions whether knowledge is possible at all. Cynicism is different again: distrust of motives.",
+   "trigger": "Someone's doubts get so broad they'd also wipe out their own claims, or you need to separate healthy caution from radical doubt.",
+   "say_it": "Being careful about claims, I'm with you. But if nobody can know anything, that hits your side as hard as mine.",
+   "variants": [
+    "skeptic",
+    "sceptic",
+    "scepticism",
+    "radical skepticism",
+    "Pyrrhonism"
+   ]
   },
   {
    "name": "Steelman",
@@ -1272,12 +1691,17 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "Restating the other side's view in its strongest, most defensible form before you respond to it.",
+   "distinction": "A straw man replaces the view with a weaker version that's easy to knock down. A steelman also goes further than the principle of charity, which only picks the most reasonable reading of what was said.",
+   "trigger": "You're about to rebut a view and want to be sure you're beating the real thing.",
+   "say_it": "Let me try your best version of this and you tell me if I got it - you're saying X because of Y?",
+   "variants": [
+    "steelmanning",
+    "steel man",
+    "steel-man",
+    "steelmanned"
+   ]
   },
   {
    "name": "Principle of charity",
@@ -1285,12 +1709,16 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "Interpreting someone's words in the most reasonable way they allow, assuming they're rational and mean something sensible, before you criticize.",
+   "distinction": "A steelman goes further, actively building or improving the strongest version of the argument; charity just picks the best reading of what they actually said.",
+   "trigger": "Someone's comment could be read as dumb or as reasonable, and you're tempted to go with the dumb reading.",
+   "say_it": "I'm gonna assume you mean X here, since that's the stronger reading. Correct me if I'm off.",
+   "variants": [
+    "charity",
+    "charitable interpretation",
+    "interpretive charity"
+   ]
   },
   {
    "name": "Concession",
@@ -1298,12 +1726,16 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "Openly granting a point to the other side: a true premise, a fair criticism, or part of their conclusion.",
+   "distinction": "Capitulation gives up the whole position; a concession grants one piece while keeping the main claim, and often builds credibility.",
+   "trigger": "The other person makes a point that's actually right and fighting it would cost you credibility.",
+   "say_it": "Yeah, fair. Christians have handled that badly sometimes. That still doesn't settle whether it's true, though.",
+   "variants": [
+    "concede",
+    "conceding",
+    "concessio"
+   ]
   },
   {
    "name": "Turn (turnaround)",
@@ -1311,12 +1743,18 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "In debate, taking the opponent's argument or evidence and showing it actually supports your side or hurts theirs.",
+   "distinction": "A rebuttal answers or defeats an argument; a turn goes further and flips it into a reason for your position.",
+   "trigger": "The other person's point, followed all the way through, helps your case more than theirs.",
+   "say_it": "Actually I'll take that. If X is true, that makes my case stronger, and here's why.",
+   "variants": [
+    "turnaround",
+    "the turn",
+    "turning the argument",
+    "link turn",
+    "impact turn"
+   ]
   },
   {
    "name": "Internal critique",
@@ -1324,12 +1762,15 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "Evaluating a view by its own standards and assumptions, showing that it fails or contradicts itself on its own terms.",
+   "distinction": "An external critique judges the view by your standards, which the other person may simply reject.",
+   "trigger": "The other person won't accept your premises, so you test their view against theirs.",
+   "say_it": "Forget my view for a sec. Just going by what you've said, how do you get to X?",
+   "variants": [
+    "immanent critique",
+    "internal criticism"
+   ]
   },
   {
    "name": "Cross-examination",
@@ -1337,12 +1778,18 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "A structured stretch of questioning where one side asks and the other answers, used to clarify the opponent's position, expose weak spots and set up arguments for later.",
+   "distinction": "A clarifying question seeks understanding only; cross-examination is strategic, building toward points you plan to use.",
+   "trigger": "You're in a live exchange and can ask a run of questions to pin down their commitments before you argue.",
+   "say_it": "Can I ask you a couple quick questions first, so I'm not arguing against something you don't hold?",
+   "variants": [
+    "cross-ex",
+    "cross ex",
+    "CX",
+    "cross examination",
+    "crossfire"
+   ]
   },
   {
    "name": "Clarifying question",
@@ -1350,12 +1797,15 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "A question asked only to understand what someone means or is claiming, with no trap built in.",
+   "distinction": "A leading question steers the person toward an answer the asker wants; a clarifying question leaves the answer open.",
+   "trigger": "You're not sure what the other person is claiming, and responding now would risk attacking the wrong thing.",
+   "say_it": "When you say \"evidence,\" what would count for you?",
+   "variants": [
+    "clarification",
+    "clarifying questions"
+   ]
   },
   {
    "name": "Socratic questioning",
@@ -1363,12 +1813,17 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "Examining a belief through a sequence of questions that draw out its assumptions and implications, often so the person notices a tension for themselves.",
+   "distinction": "Cross-examination is adversarial and aimed at the audience or the judge; Socratic questioning aims at shared inquiry and the other person's own discovery.",
+   "trigger": "Telling someone they're wrong won't land, but they might see the problem if they walk into it themselves.",
+   "say_it": "Interesting. How'd you come to that? And what would you say to someone who pushed back with X?",
+   "variants": [
+    "Socratic method",
+    "socratic",
+    "elenchus",
+    "Socratic dialogue"
+   ]
   },
   {
    "name": "Framing",
@@ -1376,12 +1831,17 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "As a debate move, setting the terms of an exchange: which question is being asked, who carries the burden, and what's taken for granted, so the discussion runs on ground you've chosen.",
+   "distinction": "Loaded language works at the level of single words; framing works at the level of the whole question. Reframing is the counter-move, replacing a frame someone else set.",
+   "trigger": "The exchange is being set up so your side loses before anyone argues, or you have the chance to speak first.",
+   "say_it": "Before we jump in, what are we actually asking - whether Christianity's true, or whether Christians behave well? Those are two different conversations.",
+   "variants": [
+    "frame",
+    "reframing",
+    "reframe",
+    "frame control"
+   ]
   },
   {
    "name": "Reframing",
@@ -1404,12 +1864,16 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "Points both sides already agree on, established on purpose to build trust and give the argument a shared starting place.",
+   "distinction": "A concession grants a point that was in dispute; common ground names agreements that were never in dispute.",
+   "trigger": "The exchange is getting heated, or you need a shared premise to reason from.",
+   "say_it": "Can we at least agree that if something's true, it's worth knowing? I think we're closer than this thread makes it look.",
+   "variants": [
+    "shared ground",
+    "points of agreement",
+    "common premises"
+   ]
   },
   {
    "name": "Ethos",
@@ -1417,12 +1881,16 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "Persuasion through the speaker's perceived character and credibility: competence, good will and integrity. One of Aristotle's three modes of persuasion.",
+   "distinction": "The appeal to authority fallacy leans on someone else's status to settle a claim; ethos is the trust you earn by how you handle yourself and the evidence.",
+   "trigger": "Your audience is deciding whether to trust you before they've weighed what you said.",
+   "say_it": "Honestly, I don't know the answer to that one. Give me a minute to look it up instead of guessing.",
+   "variants": [
+    "ethical appeal",
+    "appeal to character",
+    "credibility appeal"
+   ]
   },
   {
    "name": "Pathos",
@@ -1430,12 +1898,16 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "Persuasion through the audience's emotions, helping them feel the weight, stakes or urgency of a point.",
+   "distinction": "The appeal to emotion fallacy uses feeling in place of reasons; pathos used well makes good reasons felt.",
+   "trigger": "Your argument is sound but abstract, and the audience needs to feel why it matters.",
+   "say_it": "Picture telling a grieving kid it's all just chemicals and nothing else. Does that sound like the whole story to you?",
+   "variants": [
+    "emotional appeal",
+    "pathetic appeal",
+    "pathos appeal"
+   ]
   },
   {
    "name": "Logos",
@@ -1443,12 +1915,16 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "Persuasion through reasoning and evidence: the structure and support of the argument itself. In Christian theology the word also names Christ as the Word (John 1), a separate sense.",
+   "distinction": "Logic is the formal study of valid inference; logos is the rhetorical appeal to reason, which also takes in examples, evidence and plausibility.",
+   "trigger": "The audience is skeptical and wants to see the steps laid out before they'll move.",
+   "say_it": "Let me just lay out the steps. Premise one, premise two - tell me which one you reject.",
+   "variants": [
+    "logical appeal",
+    "rational appeal",
+    "logo"
+   ]
   },
   {
    "name": "Kairos",
@@ -1456,12 +1932,16 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "The opportune moment; in rhetoric, saying the right thing at the right time and fitting your argument to the occasion.",
+   "distinction": "Chronos is clock time, one moment after another; kairos is timing in the sense of an opening that may not come back.",
+   "trigger": "You're deciding whether to make your point now, wait, or let it go because the moment isn't right.",
+   "say_it": "I'll hold that thought for now. Let's come back to it once we've sorted out the first part.",
+   "variants": [
+    "chiros",
+    "kyros",
+    "kairotic"
+   ]
   },
   {
    "name": "Audience",
@@ -1469,12 +1949,16 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "The people a message is actually addressed to and meant to move, including silent readers, whose beliefs, values and knowledge should shape what you say and how.",
+   "distinction": "The opponent is the person you're arguing with, and often isn't the audience at all; in a comment section the people reading along usually are.",
+   "trigger": "You're replying in a public thread and need to decide who you're really trying to reach.",
+   "say_it": "I'm probably not gonna change your mind, and that's okay. I'm writing this for whoever's reading along.",
+   "variants": [
+    "target audience",
+    "particular audience",
+    "universal audience"
+   ]
   },
   {
    "name": "Signposting",
@@ -1482,12 +1966,16 @@
    "tags": [
     "reasoning"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "Telling listeners where you are in your argument: what's coming, which point you're on, and how it connects, so they can follow.",
+   "distinction": "A roadmap is a single preview at the start laying out the whole structure; signposting keeps marking the path as you go.",
+   "trigger": "You're making a multi-part point live and the other person or the audience could lose the thread.",
+   "say_it": "Two things, real quick. First the history question, then I'll get to the morality one.",
+   "variants": [
+    "signpost",
+    "sign posting",
+    "roadmapping"
+   ]
   },
   {
    "name": "Confirmation bias",
@@ -1496,12 +1984,16 @@
     "reasoning",
     "metacognition"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "The tendency to seek, notice, interpret and remember information in ways that support what you already believe.",
+   "distinction": "Motivated reasoning is driven by what you want to be true; confirmation bias can happen with no stake at all, just from what you already happen to believe.",
+   "trigger": "Every source you're finding agrees with you, and you haven't gone looking for the strongest case against.",
+   "say_it": "Fair hit. I've mostly been reading people on my side, so send me the best thing you've got and I'll actually read it.",
+   "variants": [
+    "myside bias",
+    "confirmatory bias",
+    "confirmation-bias"
+   ]
   },
   {
    "name": "Motivated reasoning",
@@ -1510,12 +2002,15 @@
     "reasoning",
     "metacognition"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "Reasoning shaped by the conclusion you want, so unwelcome evidence gets heavy scrutiny and welcome evidence gets waved through.",
+   "distinction": "Confirmation bias favors beliefs you already hold; motivated reasoning is pulled by desires, fears or identity, which can push toward beliefs you don't hold yet.",
+   "trigger": "You notice you're working much harder to knock down one argument than its mirror image, or someone clearly has a lot riding on a conclusion.",
+   "say_it": "I'll be honest, I've got skin in this, so check my reasoning. Goes for you too, though.",
+   "variants": [
+    "motivated cognition",
+    "motivated thinking"
+   ]
   },
   {
    "name": "Belief revision",
@@ -1524,12 +2019,17 @@
     "reasoning",
     "metacognition"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "Updating what you believe when you meet new evidence or arguments, by adding, dropping or adjusting beliefs while keeping your overall view consistent. Bayesian updating is one formal model of it.",
+   "distinction": "Flip-flopping implies changing position without good reason; belief revision is change proportioned to the evidence, in either size.",
+   "trigger": "Someone makes a point that genuinely should shift your view, even a little.",
+   "say_it": "Huh. That moves me a bit on X. Not all the way, but I'll adjust.",
+   "variants": [
+    "updating",
+    "Bayesian updating",
+    "updating your priors",
+    "changing your mind"
+   ]
   },
   {
    "name": "Intellectual honesty",
@@ -1538,12 +2038,16 @@
     "reasoning",
     "metacognition"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "Putting truth ahead of winning: representing evidence and opponents fairly, admitting uncertainty and mistakes, and holding your own view to the same standards as anyone else's.",
+   "distinction": "Sincerity means believing what you say; intellectual honesty also demands a fair method, like no cherry-picking and no double standards.",
+   "trigger": "You're tempted to skip a strong objection, overstate your evidence, or hold the other side to a stricter standard than your own.",
+   "say_it": "You're right, I wouldn't accept that kind of argument from the other side, so I shouldn't be using it either.",
+   "variants": [
+    "honesty",
+    "epistemic honesty",
+    "good faith"
+   ]
   },
   {
    "name": "Metacognition",
@@ -1551,12 +2055,17 @@
    "tags": [
     "metacognition"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "Thinking about your own thinking: knowing how your mind works, and monitoring and steering it while you work (Flavell, 1979; Nelson and Narens).",
+   "distinction": "Cognition is the thinking itself, like solving or remembering. Metacognition sits one level up, watching that thinking and adjusting it.",
+   "trigger": "You're stuck mid-task and can't tell whether the problem is the task or the way you're attacking it.",
+   "say_it": "Hang on, let me step back and look at how I'm going about this, because something's off.",
+   "variants": [
+    "meta-cognition",
+    "meta cognition",
+    "metacog",
+    "thinking about thinking"
+   ]
   },
   {
    "name": "Person knowledge",
@@ -1564,12 +2073,16 @@
    "tags": [
     "metacognition"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "What you believe about yourself and people in general as thinkers: your strengths, blind spots and typical patterns when learning or reasoning (Flavell).",
+   "distinction": "Everyday self-awareness covers mood and identity. Person knowledge is narrower: beliefs about how you, and people, learn, remember and reason.",
+   "trigger": "You're setting up a task and should plan around how you specifically tend to work.",
+   "say_it": "I know I lose the thread after about forty minutes of dense reading, so I'm breaking this up.",
+   "variants": [
+    "person variable",
+    "person variables",
+    "knowledge of persons"
+   ]
   },
   {
    "name": "Task knowledge",
@@ -1577,12 +2090,15 @@
    "tags": [
     "metacognition"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "What you know about how a task's nature and demands shape the thinking it needs: how hard it is, how long it takes, what kind of effort it calls for.",
+   "distinction": "Strategy knowledge is about the methods you could use. Task knowledge is about the job itself, its size, difficulty and what doing it well requires.",
+   "trigger": "You're about to estimate time or effort for something you haven't really sized up yet.",
+   "say_it": "This looks like an edit, but honestly it's a rewrite, so I need to budget for that.",
+   "variants": [
+    "task variable",
+    "task variables"
+   ]
   },
   {
    "name": "Strategy knowledge",
@@ -1590,12 +2106,16 @@
    "tags": [
     "metacognition"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "What you know about the strategies available for a kind of task and how well each one tends to work (Flavell).",
+   "distinction": "Conditional knowledge goes a step further. Strategy knowledge is knowing the tools exist; conditional knowledge is knowing when and why to pick each one.",
+   "trigger": "You're starting something and reaching for the same approach you always use without looking at others.",
+   "say_it": "Okay, what are my options here besides just rereading it again?",
+   "variants": [
+    "strategy variable",
+    "strategy variables",
+    "strategic knowledge"
+   ]
   },
   {
    "name": "Conditional knowledge",
@@ -1603,12 +2123,15 @@
    "tags": [
     "metacognition"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "Knowing when and why to use a given strategy, meaning the conditions under which it works. Schraw's third type of metacognitive knowledge, after declarative and procedural.",
+   "distinction": "Procedural knowledge is knowing how to run a strategy. Conditional knowledge is knowing whether this particular situation calls for it.",
+   "trigger": "A method that usually works for you is about to be used in a situation that's different in some way.",
+   "say_it": "Outlining works when I already know the material, and I don't yet, so that's the wrong move today.",
+   "variants": [
+    "conditional metacognitive knowledge",
+    "knowing when and why"
+   ]
   },
   {
    "name": "Metacognitive monitoring",
@@ -1631,12 +2154,17 @@
    "tags": [
     "metacognition"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "The sense that you know something you can't recall right now and would recognize it if you saw it (Hart, 1965; Nelson and Narens).",
+   "distinction": "Tip of the tongue is a sharper version where recall feels close and you have pieces. Feeling of knowing is the broader judgment that the answer is in there somewhere.",
+   "trigger": "You can't pull up an answer and need to decide whether to keep digging or go look it up.",
+   "say_it": "I know I've seen this, I just can't get to it... give me a sec, or I'll check my notes.",
+   "variants": [
+    "FOK",
+    "FOK judgment",
+    "feeling-of-knowing",
+    "feeling of knowing judgment"
+   ]
   },
   {
    "name": "Judgment of learning",
@@ -1644,12 +2172,17 @@
    "tags": [
     "metacognition"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "A prediction, made during or after study, of how likely you are to remember something later. Judgments made after a delay are far more accurate than ones made right away (Nelson and Dunlosky).",
+   "distinction": "Feeling of knowing is about something you can't recall right now. A judgment of learning is a forecast about later recall of what you just studied.",
+   "trigger": "You've just gone over something and are about to decide you're done with it.",
+   "say_it": "Would I actually get this tomorrow without looking? Probably not yet.",
+   "variants": [
+    "JOL",
+    "JOLs",
+    "judgement of learning",
+    "delayed JOL"
+   ]
   },
   {
    "name": "Confidence judgment",
@@ -1657,12 +2190,17 @@
    "tags": [
     "metacognition"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "A rating of how sure you are that an answer or decision you've already given is correct, made after the fact (a retrospective confidence judgment).",
+   "distinction": "Calibration is how well your confidence ratings match how often you're actually right. A confidence judgment is the single rating itself, before anyone checks it.",
+   "trigger": "You've just made a call and someone, maybe you, needs to know how much weight to put on it.",
+   "say_it": "Gut says I'm right, but if you made me bet my own money on it I'd hedge some.",
+   "variants": [
+    "retrospective confidence judgment",
+    "RCJ",
+    "confidence rating",
+    "certainty judgment"
+   ]
   },
   {
    "name": "Calibration",
@@ -1683,12 +2221,18 @@
    "tags": [
     "metacognition"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "Mistaking ease of processing for real knowledge. Material that feels familiar or reads smoothly seems learned when you couldn't produce it on your own (Bjork; Koriat).",
+   "distinction": "Overconfidence is the general gap between how sure you are and how right you are. The fluency illusion is one specific cause of it: ease being misread as mastery.",
+   "trigger": "Rereading or reviewing something feels easy and you're tempted to call it learned.",
+   "say_it": "Reading it felt smooth, so let me close the tab and see if I can actually say it back.",
+   "variants": [
+    "fluency illusion",
+    "illusion of competence",
+    "illusion of knowing",
+    "familiarity illusion",
+    "fluency effect"
+   ]
   },
   {
    "name": "Comprehension monitoring",
@@ -1696,12 +2240,16 @@
    "tags": [
     "metacognition"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "Checking, as you read or listen, whether you're actually understanding, and noticing when meaning breaks down (Markman; Baker).",
+   "distinction": "Error detection catches a specific mistake in something you produced. Comprehension monitoring tracks whether understanding is happening at all as information comes in.",
+   "trigger": "You reach the end of a page or a meeting and realize you can't say what it was about.",
+   "say_it": "Wait, I've lost it. What did that last part actually say?",
+   "variants": [
+    "monitoring comprehension",
+    "reading comprehension monitoring",
+    "understanding check"
+   ]
   },
   {
    "name": "Error detection",
@@ -1709,12 +2257,16 @@
    "tags": [
     "metacognition"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "Noticing that something you did or produced is wrong, often from a quick sense of mismatch before you can say what the mistake is.",
+   "distinction": "Error correction is fixing the mistake. Detection is only the noticing, and you can detect a problem before you know the fix.",
+   "trigger": "Something in your work feels off but you haven't pinned down why.",
+   "say_it": "Something about this number bugs me. Don't know what yet, but I'm not sending it.",
+   "variants": [
+    "error monitoring",
+    "error awareness",
+    "performance monitoring"
+   ]
   },
   {
    "name": "Metacognitive regulation",
@@ -1737,12 +2289,16 @@
    "tags": [
     "metacognition"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "Before starting, setting a goal, picking strategies, ordering steps and budgeting time and effort. One of the three regulation skills in Schraw's model, with monitoring and evaluation.",
+   "distinction": "Strategy selection is one decision inside planning. Planning is the whole setup: goal, sequence, resources and checkpoints.",
+   "trigger": "You're about to dive into a task with more than a few steps and no checkpoints.",
+   "say_it": "Before I open anything, what does done look like and where am I checking in?",
+   "variants": [
+    "metacognitive planning",
+    "forethought",
+    "forethought phase"
+   ]
   },
   {
    "name": "Strategy selection",
@@ -1750,12 +2306,16 @@
    "tags": [
     "metacognition"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "Choosing which method to use on a task, ideally based on what fits the task, the goal and your own strengths.",
+   "distinction": "Strategy switching happens mid-task when the chosen method isn't working. Selection is the up-front choice.",
+   "trigger": "You've got a couple of ways to attack something and you're about to grab the familiar one by default.",
+   "say_it": "I could grind through this myself or find someone who's already solved it, and the second one's faster here.",
+   "variants": [
+    "strategy choice",
+    "choosing a strategy",
+    "strategy use"
+   ]
   },
   {
    "name": "Strategy switching",
@@ -1763,12 +2323,16 @@
    "tags": [
     "metacognition"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "Dropping a method mid-task and moving to another because monitoring shows it isn't working.",
+   "distinction": "Escalation of commitment is the opposite pull: doubling down on a failing approach because you've already invested in it. Switching is the evidence-driven exit.",
+   "trigger": "You've put real time into an approach and the results still aren't moving.",
+   "say_it": "Three tries and nothing's budging, so I'm coming at it from a different side.",
+   "variants": [
+    "strategy shift",
+    "strategy shifting",
+    "switching strategies"
+   ]
   },
   {
    "name": "Effort allocation",
@@ -1776,12 +2340,17 @@
    "tags": [
     "metacognition"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "Deciding how much time and attention each part of a task gets. Studied as allocation of study time (Son and Metcalfe; Metcalfe's region of proximal learning).",
+   "distinction": "Planning sets the overall route. Effort allocation is the running spend: where the next hour actually goes.",
+   "trigger": "You're spreading even effort across parts that aren't equally hard or equally important.",
+   "say_it": "The intro's fine. It's the pricing section that needs most of my afternoon.",
+   "variants": [
+    "allocation of study time",
+    "study time allocation",
+    "time allocation",
+    "region of proximal learning"
+   ]
   },
   {
    "name": "Stopping rule",
@@ -1789,12 +2358,17 @@
    "tags": [
     "metacognition"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "The test you use to decide you've done enough and can stop studying, searching or working on something.",
+   "distinction": "Satisficing is a decision style, taking the first good-enough option. A stopping rule is the specific test that tells you when to quit, which might be satisficing or something stricter.",
+   "trigger": "You keep polishing or researching and can't tell whether more effort is still paying off.",
+   "say_it": "I'll call it done when I can explain it to someone with no notes. That's my bar.",
+   "variants": [
+    "stop rule",
+    "stopping criterion",
+    "termination rule",
+    "norm of study"
+   ]
   },
   {
    "name": "Self-explanation",
@@ -1802,12 +2376,16 @@
    "tags": [
     "metacognition"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "Explaining material to yourself as you go, saying why a step follows and how it links to what you already know. Reliably improves learning (Chi).",
+   "distinction": "Summarizing restates what was said. Self-explanation adds the why and the links that aren't on the page.",
+   "trigger": "You're following a worked example or argument and nodding along without asking why each step is there.",
+   "say_it": "So this works because the follow-up lands before they forget... right? Let me check that's actually why.",
+   "variants": [
+    "self explanation",
+    "self-explaining",
+    "self-explanation effect"
+   ]
   },
   {
    "name": "Debiasing",
@@ -1815,12 +2393,18 @@
    "tags": [
     "metacognition"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "Deliberate techniques for reducing a known bias in your judgment, such as considering the opposite, running a pre-mortem or slowing down (Fischhoff; Larrick).",
+   "distinction": "Bias awareness is just knowing a bias exists, which does little on its own. Debiasing is running a specific counter-move when that bias is likely to show up.",
+   "trigger": "You're about to commit to a decision in a spot where you know a particular bias tends to bite.",
+   "say_it": "Let's say this flopped six months from now. What's the most likely reason?",
+   "variants": [
+    "de-biasing",
+    "bias mitigation",
+    "cognitive debiasing",
+    "consider the opposite",
+    "pre-mortem"
+   ]
   },
   {
    "name": "Reflection",
@@ -1828,12 +2412,17 @@
    "tags": [
     "metacognition"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "Looking back on an experience to make sense of what happened, why, and what it means for how you'll think or act next (Dewey; Schön).",
+   "distinction": "An after-action review is a structured, often group, version with set questions. Reflection is the broader habit and can be loose and personal.",
+   "trigger": "Something went notably well or badly and you're tempted to just move on.",
+   "say_it": "Before I jump to the next thing, what did I actually learn from how that call went?",
+   "variants": [
+    "reflective practice",
+    "reflection-on-action",
+    "reflection-in-action",
+    "metacognitive reflection"
+   ]
   },
   {
    "name": "After-action review",
@@ -1841,12 +2430,18 @@
    "tags": [
     "metacognition"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "A structured debrief after a task built on four questions: what was supposed to happen, what actually happened, why the difference, and what to keep or change. Developed by the US Army.",
+   "distinction": "A post-mortem usually examines a failure. An after-action review runs after wins too and is built for learning, with blame kept out.",
+   "trigger": "A project, launch or meeting wraps and you, or the same team, will do something like it again.",
+   "say_it": "Quick AAR. We planned to launch Tuesday, we launched Friday... where'd the gap come from?",
+   "variants": [
+    "AAR",
+    "after action review",
+    "debrief",
+    "hot wash",
+    "hotwash"
+   ]
   },
   {
    "name": "Transfer",
@@ -1854,12 +2449,18 @@
    "tags": [
     "metacognition"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "Applying what you learned in one setting to a different one. Near transfer goes to similar situations; far transfer goes to ones that look quite different on the surface.",
+   "distinction": "Retention is remembering something in the same context you learned it. Transfer is using it somewhere new, which is much harder and rarer.",
+   "trigger": "A new problem shares the deep structure of one you've already solved, even though the surface looks different.",
+   "say_it": "This is the same shape as that onboarding fix we did, it's just wearing different clothes.",
+   "variants": [
+    "transfer of learning",
+    "learning transfer",
+    "near transfer",
+    "far transfer",
+    "analogical transfer"
+   ]
   },
   {
    "name": "Overconfidence",
@@ -1867,12 +2468,17 @@
    "tags": [
     "metacognition"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "Being more sure than your accuracy justifies. Shows up as overestimating your performance, overrating yourself against others, or giving ranges that are too narrow (Moore and Healy).",
+   "distinction": "The Dunning-Kruger effect is one pattern of it tied to low skill. Overconfidence is the general miscalibration and hits experts too, especially as overly tight estimates.",
+   "trigger": "You're giving a tight estimate or a firm prediction on something you haven't checked.",
+   "say_it": "I said two days, but I've said two days before and it turned into five, so let's call it four.",
+   "variants": [
+    "overconfidence bias",
+    "overprecision",
+    "overestimation",
+    "overplacement"
+   ]
   },
   {
    "name": "Underconfidence",
@@ -1880,12 +2486,16 @@
    "tags": [
     "metacognition"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "Being less sure than your accuracy justifies. Common on tasks that feel hard, and it tends to grow with repeated practice (Koriat's underconfidence-with-practice effect).",
+   "distinction": "Caution is a choice to hedge when stakes are high. Underconfidence is a miscalibration, where your rating is lower than your actual track record.",
+   "trigger": "You're about to hedge or defer on a kind of call you've gotten right many times before.",
+   "say_it": "I keep saying I'm not sure, but honestly my track record on calls like this is pretty good.",
+   "variants": [
+    "under-confidence",
+    "underconfidence-with-practice",
+    "UWP effect"
+   ]
   },
   {
    "name": "Dunning-Kruger effect",
@@ -1893,12 +2503,19 @@
    "tags": [
     "metacognition"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "The finding that people with low skill in an area tend to overestimate their performance, partly because judging the work takes the same skill as doing it (Kruger and Dunning, 1999).",
+   "distinction": "General overconfidence shows up at every skill level; Dunning-Kruger is specifically about the low-skill end. The pop version, that beginners are the most confident people in the room, overstates the research.",
+   "trigger": "You're new to a field and your self-rating feels high before anyone else has checked your work.",
+   "say_it": "I'm a week into this, so how good I think I am probably isn't worth much yet.",
+   "variants": [
+    "Dunning Kruger",
+    "Dunning-Kruger",
+    "DK effect",
+    "Dunning Kruger effect",
+    "Dunning Krueger",
+    "Dunning Cougar"
+   ]
   },
   {
    "name": "Hindsight bias",
@@ -1906,12 +2523,17 @@
    "tags": [
     "metacognition"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "After learning how something turned out, believing you knew or could have predicted it all along (Fischhoff, 1975).",
+   "distinction": "Outcome bias judges a decision by how it turned out. Hindsight bias distorts your memory of what you believed before the outcome.",
+   "trigger": "You catch yourself saying you knew it about an outcome you never actually wrote a prediction down for.",
+   "say_it": "Did I really see that coming, or does it just feel like I did now? Let me find what I wrote.",
+   "variants": [
+    "knew-it-all-along effect",
+    "I-knew-it-all-along effect",
+    "creeping determinism",
+    "hindsight"
+   ]
   },
   {
    "name": "Need for closure",
@@ -1919,12 +2541,18 @@
    "tags": [
     "metacognition"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "A preference for a firm answer over ambiguity, which pushes you to grab an early answer and then stick to it (Kruglanski's seizing and freezing).",
+   "distinction": "Decisiveness is acting when you have enough evidence. Need for closure is the pull to end the uncertainty itself, even when the evidence is still thin.",
+   "trigger": "You feel relief at landing on an answer and notice you stopped looking right after.",
+   "say_it": "I want this settled so bad I'm grabbing the first decent answer. Let's sit on it a day.",
+   "variants": [
+    "need for cognitive closure",
+    "NFCC",
+    "seizing and freezing",
+    "cognitive closure",
+    "need for closure scale"
+   ]
   },
   {
    "name": "Cognitive load",
@@ -1932,12 +2560,19 @@
    "tags": [
     "metacognition"
    ],
-   "status": "stub",
-   "definition": "",
-   "distinction": "",
-   "trigger": "",
-   "say_it": "",
-   "variants": []
+   "status": "draft",
+   "definition": "How much of your working memory a task is using at once. When it exceeds capacity, learning and performance drop (Sweller's cognitive load theory: intrinsic, extraneous and germane load).",
+   "distinction": "Mental fatigue builds up over hours. Cognitive load is how much you're juggling right now, and a fresh mind can still be overloaded.",
+   "trigger": "You're holding too many moving pieces in your head and simple things start slipping.",
+   "say_it": "Too much in my head at once. Let me get this onto paper before I add anything else.",
+   "variants": [
+    "CLT",
+    "cognitive load theory",
+    "working memory load",
+    "intrinsic load",
+    "extraneous load",
+    "germane load"
+   ]
   }
  ]
 }

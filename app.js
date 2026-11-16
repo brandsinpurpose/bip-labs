@@ -28,6 +28,7 @@ const ICON = {
   practice:'<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/></svg>',
   lexicon:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h10a4 4 0 0 1 4 4v12H9a4 4 0 0 1-4-4z"/><path d="M9 9h6M9 13h4"/></svg>',
   progress:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>',
+  speak:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9z"/><path d="M16.5 8.5a5 5 0 0 1 0 7M19 6a8.5 8.5 0 0 1 0 12"/></svg>',
   chev:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>',
   arrow:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>',
   check:'<svg viewBox="0 0 24 24" aria-hidden="true" style="width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:3"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>',
@@ -57,6 +58,38 @@ const plural = (n, one, many) => n + ' ' + (n === 1 ? one : (many || one + 's'))
 const dl = d => DOMAIN_LABELS[d] || {title:cap(d), desc:'', ask:'Which answer fits best?', unit:'answer'};
 let toastT;
 function toast(msg){ const t = $('toast'); t.textContent = msg; t.classList.add('on'); clearTimeout(toastT); toastT = setTimeout(() => t.classList.remove('on'), 2600); }
+/* ===== read aloud (the browser's own built-in voices - free, no account, nothing leaves the device) ===== */
+const SPEECH = ('speechSynthesis' in window) && ('SpeechSynthesisUtterance' in window);
+let VOICE = null;
+function pickVoice(){
+  if (!SPEECH) return;
+  const vs = speechSynthesis.getVoices().filter(v => /^en(-|_|$)/i.test(v.lang));
+  const rank = v => (/natural|neural|online/i.test(v.name) ? 0 : /google|samantha|daniel|aria|jenny|guy/i.test(v.name) ? 1 : 2) + (/en-us/i.test(v.lang) ? 0 : 0.5);
+  VOICE = vs.sort((a, b) => rank(a) - rank(b))[0] || null;
+}
+if (SPEECH){ pickVoice(); speechSynthesis.addEventListener('voiceschanged', pickVoice); }
+function speak(text, btn){
+  if (!SPEECH || !text) return;
+  if (speechSynthesis.speaking){ speechSynthesis.cancel(); if (btn && btn.classList.contains('on')){ btn.classList.remove('on'); return; } }
+  document.querySelectorAll('.speak.on').forEach(b => b.classList.remove('on'));
+  const u = new SpeechSynthesisUtterance(text);
+  if (VOICE) u.voice = VOICE;
+  u.lang = VOICE ? VOICE.lang : 'en-US'; u.rate = 0.92;
+  if (btn){ btn.classList.add('on'); u.onend = u.onerror = () => btn.classList.remove('on'); }
+  speechSynthesis.speak(u);
+}
+function speakBtn(text, label, cls){
+  if (!SPEECH || !text) return null;
+  const b = h('button', {type:'button', class:'speak' + (cls ? ' ' + cls : ''), 'aria-label':label, title:label, onclick:e => { e.preventDefault(); e.stopPropagation(); speak(text, b); }});
+  b.insertAdjacentHTML('afterbegin', ICON.speak);
+  return b;
+}
+function hearRow(name){
+  const b = speakBtn(name, 'Hear ' + name + ' said aloud', 'big');
+  if (!b) return null;
+  b.append(h('span', null, 'Hear it'));
+  return h('div', {class:'hear'}, b);
+}
 function announce(msg){ const a = $('announce'); a.textContent = ''; setTimeout(() => { a.textContent = msg; }, 60); }
 function validQ(q){ return q && typeof q.id === 'string' && typeof q.scenario === 'string' && q.scenario.trim() && Array.isArray(q.options) && q.options.length === 3 && q.options.every(x => typeof x === 'string' && x.trim()) && [0,1,2].includes(Number(q.correct)) && typeof q.explain === 'string'; }
 
@@ -239,6 +272,7 @@ document.querySelectorAll('[data-close]').forEach(b => b.addEventListener('click
 document.querySelectorAll('dialog').forEach(dg => dg.addEventListener('click', e => { if (e.target === dg) dg.close(); }));
 
 function render(){
+  if (SPEECH && speechSynthesis.speaking) speechSynthesis.cancel();
   renderChrome();
   document.body.classList.remove('has-next');
   const secName = SECTIONS.find(s => s[0] === UI.section)[1], viewName = VIEWS[UI.section].find(v => v[0] === UI.view)[1];
@@ -495,8 +529,10 @@ function termEntry(t, lv){
   const sum = h('summary', null, h('span', null, h(L, {class:'en'}, t.name, ' ', termStatusBadge(r)), h('span', {class:'d'}, r.ready ? r.definition : 'Named here. The full entry is coming soon.')));
   sum.insertAdjacentHTML('beforeend', ICON.chev);
   const body = h('div', {class:'entry-body'});
+  const hr = hearRow(t.name); if (hr) body.append(hr);
   if (r.ready){
-    [['Definition', r.definition], ['Not to be confused with', r.distinction], ['When to reach for it', r.trigger], ['Say it', r.say_it]].forEach(([l, val]) => { if (val) body.append(h(Lb, {class:'el'}, l), h('p', null, val)); });
+    [['Definition', r.definition], ['Not to be confused with', r.distinction], ['When to reach for it', r.trigger]].forEach(([l, val]) => { if (val) body.append(h(Lb, {class:'el'}, l), h('p', null, val)); });
+    if (r.say_it) body.append(h(Lb, {class:'el'}, 'Say it'), h('p', {class:'sayit'}, h('span', null, r.say_it), speakBtn(r.say_it, 'Hear the say-it line for ' + t.name)));
     if (r.fromHome) body.append(h('p', {class:'savenote'}, 'This entry lives in the Cognitive Lab bank, so it is written once and shown here.'));
     if (r.status === 'draft') body.append(h('p', {class:'savenote'}, 'Draft - written, not yet approved.'));
   } else {
@@ -552,7 +588,8 @@ function renderCogLexicon(v){
       const det = h('details', {class:'entry'});
       const sum = h('summary', null, h('span', null, h('h' + nl, {class:'en'}, x.name), h('span', {class:'d'}, x.definition)));
       sum.insertAdjacentHTML('beforeend', ICON.chev);
-      det.append(sum, entryBody(x, true, nl + 1));
+      const eb = entryBody(x, true, nl + 1); const hr = hearRow(x.name); if (hr) eb.prepend(hr);
+      det.append(sum, eb);
       ul.append(h('li', null, det));
     });
     if (!items.length){ list.replaceChildren(h('p', {class:'empty'}, 'No entries match \u201C' + UI.lexSearch + '\u201D. ', h('button', {type:'button', class:'pill line', onclick:() => { UI.lexSearch = ''; inp.value = ''; draw(); inp.focus(); }}, 'Clear search'))); }
