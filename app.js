@@ -51,6 +51,7 @@ function h(tag, attrs, ...kids){
 }
 const shuffle = a => { a = [...a]; for (let i = a.length-1; i > 0; i--){ const j = Math.floor(Math.random()*(i+1)); [a[i],a[j]] = [a[j],a[i]]; } return a; };
 const str = t => (typeof t === 'string' ? t : '').trim();
+const lines = t => (Array.isArray(t) ? t : [t]).map(str).filter(Boolean);
 const lowerFirst = s => s && !/^[A-Z]{2}/.test(s) ? s[0].toLowerCase() + s.slice(1) : s;
 const cap = s => s ? s[0].toUpperCase() + s.slice(1) : s;
 const article = w => (/^[aeiou]/i.test(w) ? 'an ' : 'a ') + w;
@@ -151,11 +152,11 @@ function resolveTerm(t){
   const st = str(t.status) || 'stub';
   if (st === 'see-home'){
     const e = ALLLEX.get(t.name.toLowerCase());
-    if (e && str(e.definition)) return {ready:true, status:'see-home', definition:str(e.definition), distinction:str(e.distinction), trigger:str(e.trigger), say_it:str(t.say_it), fromHome:true};
+    if (e && str(e.definition)) return {ready:true, status:'see-home', definition:str(e.definition), distinction:str(e.distinction), trigger:str(e.trigger), say_it:lines(t.say_it), fromHome:true};
     return {ready:false, status:'see-home'};
   }
   if (st === 'stub' || !str(t.definition)) return {ready:false, status:'stub'};
-  return {ready:true, status:st, definition:str(t.definition), distinction:str(t.distinction), trigger:str(t.trigger), say_it:str(t.say_it)};
+  return {ready:true, status:st, definition:str(t.definition), distinction:str(t.distinction), trigger:str(t.trigger), say_it:lines(t.say_it)};
 }
 const tagged = tag => TERMS.filter(t => t.tags.includes(tag));
 
@@ -532,7 +533,10 @@ function termEntry(t, lv){
   const hr = hearRow(t.name); if (hr) body.append(hr);
   if (r.ready){
     [['Definition', r.definition], ['Not to be confused with', r.distinction], ['When to reach for it', r.trigger]].forEach(([l, val]) => { if (val) body.append(h(Lb, {class:'el'}, l), h('p', null, val)); });
-    if (r.say_it) body.append(h(Lb, {class:'el'}, 'Say it'), h('p', {class:'sayit'}, h('span', null, r.say_it), speakBtn(r.say_it, 'Hear the say-it line for ' + t.name)));
+    if (r.say_it.length){
+      body.append(h(Lb, {class:'el'}, 'Say it - in a sentence'));
+      r.say_it.forEach((s, i) => body.append(h('p', {class:'sayit'}, h('span', null, s), speakBtn(s, 'Hear example ' + (i + 1) + ' for ' + t.name))));
+    }
     if (r.fromHome) body.append(h('p', {class:'savenote'}, 'This entry lives in the Cognitive Lab bank, so it is written once and shown here.'));
     if (r.status === 'draft') body.append(h('p', {class:'savenote'}, 'Draft - written, not yet approved.'));
   } else {
@@ -649,7 +653,7 @@ function renderReasonLexicon(v){
   const ready = terms.filter(t => resolveTerm(t).ready).length;
   const cats = CATS.filter(c => terms.some(t => t.category === c.id));
   if (UI.rCat == null) UI.rCat = cats.some(c => c.id === S.settings.reasonCat) ? S.settings.reasonCat : '';
-  v.append(h('div', {class:'vh'}, h('p', {class:'lab'}, 'Lexicon - Reasoning Lab'), h('h2', null, plural(terms.length, 'term') + ', ', h('b', null, ready + ' written so far.')), h('p', {class:'lead'}, 'Logic, argument, debate, rhetoric and philosophy\u2019s tools. Open a term for what it means, the look-alike it gets confused with, when to reach for it, and a line to say it. Terms marked coming soon are named and waiting for their entry.')));
+  v.append(h('div', {class:'vh'}, h('p', {class:'lab'}, 'Lexicon - Reasoning Lab'), h('h2', null, plural(terms.length, 'term') + ', ', h('b', null, ready + ' written so far.')), h('p', {class:'lead'}, 'Logic, argument, debate, rhetoric and philosophy\u2019s tools. Open a term for what it means, the look-alike it gets confused with, when to reach for it, and two or three sentences that use it. Terms marked coming soon are named and waiting for their entry.')));
   const inp = searchBox(UI.rSearch, 'Search terms by name or other spelling', 'Search names and other spellings', val => { UI.rSearch = val; draw(); });
   const sel = h('select', {class:'in', 'aria-label':'Show category', style:'flex:0 1 auto;width:auto;max-width:100%'}, h('option', {value:''}, 'All categories'), cats.map(c => h('option', {value:c.id}, c.name)));
   sel.value = UI.rCat;
@@ -713,10 +717,10 @@ function renderReasonPractice(v){
   const side = h('div', {class:'side'});
   const coachTxt = 'Match the definition to its term. Look-alike terms are offered on purpose.';
   if (!answered) side.append(h('div', {class:'pre-coach'}, h('h2', {class:'t'}, 'How to read it'), h('p', {class:'big'}, coachTxt), h('p', null, 'Keys 1, 2 and 3 answer. Enter moves on.')));
-  if (answered && (res.trigger || res.say_it)){
+  if (answered && (res.trigger || (res.say_it && res.say_it.length))){
     const tb = h('section', {class:'tellbox', 'aria-labelledby':'tellh'}, h('h2', {class:'t', id:'tellh'}, 'Using it'));
     if (res.trigger) tb.append(h('p', {class:'via'}, h('b', null, 'Reach for it when:'), ' ', lowerFirst(res.trigger)));
-    if (res.say_it) tb.append(h('p', {class:'quote'}, '\u201C' + res.say_it + '\u201D'));
+    (res.say_it || []).forEach(s => tb.append(h('p', {class:'quote sayit'}, h('span', null, '\u201C' + s + '\u201D'), speakBtn(s, 'Hear this example'))));
     side.append(tb);
   }
   grid.append(side);

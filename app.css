@@ -321,3 +321,7 @@ textarea.in{min-height:96px;resize:vertical;line-height:1.5}
 @media (prefers-reduced-motion:reduce){.speak.on svg{animation:none}}
 .entry-body p.sayit{display:flex;align-items:flex-start;gap:12px;justify-content:space-between}
 .entry-body p.sayit span{flex:1}
+.entry-body p.sayit+p.sayit{margin-top:10px}
+.tellbox p.quote.sayit{display:flex;gap:12px;align-items:flex-start;justify-content:space-between}
+.tellbox p.quote.sayit span{flex:1}
+.tellbox p.quote+p.quote{margin-top:10px}
