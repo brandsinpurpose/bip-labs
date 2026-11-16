@@ -1,8 +1,8 @@
 {
  "schema": "lexicon-bank-v1",
- "version": 3,
+ "version": 4,
  "last-writer": "claude-cowork",
- "last-write": "2026-11-16T08:24:23Z",
+ "last-write": "2026-11-16T08:29:24Z",
  "about": "One shared word bank for Trey's thinking labs. Each term is written once and tagged with the labs that use it; each lab shows its tagged terms. Started 2026-11-15 with the Reasoning lexicon (logic, argument, debate, rhetoric and philosophy's tools) and the Metacognitive lexicon. Philosophy as a subject (thinkers, schools) comes later.",
  "entry_shape": {
   "name": "the term",
@@ -12,7 +12,8 @@
   "say_it": "two or three sentences that USE the term itself in different situations (live exchange, explaining it, own thinking or work), so Trey sees how the word sits in real speech. A list of strings.",
   "variants": "other spellings or speech-to-text forms, so search finds it",
   "status": "stub (named only) | draft (written, not approved) | approved (Trey said yes) | see-home (defined elsewhere, see home)",
-  "home": "only when the full entry lives in another bank - cognitive-lab-bank means BIP Obsidian/Learning/Cognitive Lab/Practice/_core-bank.json"
+  "home": "only when the full entry lives in another bank - cognitive-lab-bank means BIP Obsidian/Learning/Cognitive Lab/Practice/_core-bank.json",
+  "cognitive_usage": "Top-level map, not a term field: Cognitive Lab lexicon entry name -> 2-3 sentences that use the term. Kept here so the Cognitive Lab's exported bank (_core-bank.json) stays untouched. Terms that also live in this bank use their own say_it instead."
  },
  "tags": {
   "reasoning": "Reasoning lexicon - logic, argument, debate, rhetoric, philosophy's tools",
@@ -3122,5 +3123,542 @@
     "germane load"
    ]
   }
- ]
+ ],
+ "cognitive_usage": {
+  "Abstraction": [
+   "I abstracted the onboarding flow into four moves, so now I can reuse it for any client without the specifics getting in the way.",
+   "Your abstraction dropped the one detail that matters here, which is consent, so the comparison doesn't hold.",
+   "Abstraction isn't pulling facts out, it's redrawing the picture so only the parts you need for the job survive."
+  ],
+  "Decomposition": [
+   "Let's do some decomposition first: do you mean faith isn't reasonable to believe, reasonable to act on, or reasonable to prove?",
+   "When a funnel underperforms, I decompose it into traffic, page, offer and follow-up instead of staring at the whole thing.",
+   "Decomposition just means cutting a big problem into pieces small enough that you can actually think about each one."
+  ],
+  "Temporal decomposition": [
+   "A temporal decomposition of this client relationship shows the honeymoon, then the first missed deadline, then the long silence.",
+   "You're lumping the whole first century together, but a temporal decomposition puts that creed within a few years of the events.",
+   "Temporal decomposition is breaking a process into stages by time, so you can see where the change actually happened."
+  ],
+  "Causal analysis": [
+   "You're pointing at a correlation, and I'm asking for a causal analysis of why attendance actually dropped that decade.",
+   "My causal analysis of the clients who left keeps landing on the same thing: nobody owned the follow-up after launch.",
+   "Causal analysis asks why an outcome happens at all, which is broader than tracking down one broken part."
+  ],
+  "Diagnosis": [
+   "Low bookings could be the page, the price or the traffic, so I diagnosed it with the one test that splits them apart.",
+   "That's a guess, not a diagnosis, because you haven't ruled out the other explanation yet.",
+   "Diagnosis means narrowing competing causes down with evidence that actually tells them apart."
+  ],
+  "Analogical reasoning": [
+   "Your analogy's doing all the work, so walk me through the analogical reasoning: what in your example maps onto what in mine?",
+   "I used analogical reasoning on the church client, since a visitor follow-up sequence has the same structure as a dental recall reminder.",
+   "Good analogical reasoning maps relationships between cases, not just surface details that happen to look alike."
+  ],
+  "Analogical encoding": [
+   "I'm doing analogical encoding with these two funnels side by side, so I can name the principle they both run on.",
+   "Analogical encoding beats studying one example, because comparing two forces you to spell out what they share.",
+   "If you analogically encode the lost sheep and the lost coin together, the shared structure jumps out: lost, sought, found, celebrated."
+  ],
+  "Pattern recognition": [
+   "Pattern recognition tells me every client who skips the kickoff call ends up stalled, but I still don't know why.",
+   "You've spotted a pattern, sure, but pattern recognition alone doesn't prove one thing caused the other.",
+   "I'm training my pattern recognition so I catch a straw man the second it shows up in a comment thread."
+  ],
+  "Generalization": [
+   "That's a huge generalization, going from one bad pastor to every church in the country.",
+   "Before I generalize this headline to every coaching client, I want to see it win in a second niche.",
+   "Generalization is extending what held in one case to a whole class, so the real question is whether the class is alike enough."
+  ],
+  "Synthesis": [
+   "After three discovery calls, my synthesis is that she doesn't need a new site, she needs a follow-up system.",
+   "I'm not trying to pick your view or mine, I'm going for a synthesis that keeps what's true in both.",
+   "Synthesis is the opposite of taking things apart, you combine separate findings into one picture that actually hangs together."
+  ],
+  "Evaluation": [
+   "Let's agree on criteria first, otherwise your evaluation of my argument is just how it makes you feel.",
+   "My evaluation of the two landing pages comes down to clarity and proof, and the second page loses on both.",
+   "Evaluation asks how well something meets the bar, not what caused it to miss."
+  ],
+  "Problem reformulation": [
+   "Problem reformulation saved this project, because we stopped asking how to get more leads and asked why leads weren't booking.",
+   "We need some problem reformulation here, since 'can God exist alongside evil' and 'why would God allow this evil' are different questions.",
+   "When fix after fix fails, problem reformulation means changing the question itself instead of trying another answer."
+  ],
+  "Extraction": [
+   "I'm doing extraction first, pulling every promise she made on the call out of the transcript before I write any copy.",
+   "Quick extraction from your own source: the article says 'some scholars,' not 'all scholars.'",
+   "Extraction just pulls out what's already in the source, it doesn't reshape anything, that's what abstraction does."
+  ],
+  "Conceptual delineation": [
+   "Before we argue about whether that's a miracle, we need some conceptual delineation: what counts as one, and what's just rare?",
+   "I did a conceptual delineation of 'client' versus 'partner' so my ledgers stop mixing the two up.",
+   "Conceptual delineation draws the boundaries of a concept, deciding what's in, what's out, and on what criteria."
+  ],
+  "Classification": [
+   "Once the rules are set, the classification's easy: this request is support, not a new build.",
+   "You classified my argument as circular, but it doesn't meet the criteria for that fallacy.",
+   "Classification is sorting items into categories that already exist, using criteria you can actually name."
+  ],
+  "Constraint identification": [
+   "Constraint identification came first on this build: no new subscriptions, and everything has to run inside SmartFunnels Pro.",
+   "Your plan sounds great, but you skipped constraint identification, so who's actually going to staff it every week?",
+   "Do the constraint identification before you pitch anything, or you'll find out mid-build that the budget can't cover it."
+  ],
+  "Concrete fading": [
+   "I'm using concrete fading on the logic terms, starting with real sermon examples and ending with bare letters like P and Q.",
+   "Concrete fading means you start with real examples and slowly take them away until the principle stands on its own.",
+   "Teach it with one real client first, then do some concrete fading so the steps still make sense without that client."
+  ],
+  "Structural analysis": [
+   "A structural analysis of her site shows the booking page isn't linked from anywhere in the main navigation.",
+   "Let's do a structural analysis of your argument and see how the premises actually connect to the conclusion.",
+   "Structural analysis looks at how the parts are arranged and where the boundaries sit, not at what each part does."
+  ],
+  "Functional analysis": [
+   "A functional analysis of the follow-up sequence showed email three does nothing email two didn't already do.",
+   "Do a functional analysis of that verse in context: what job is it doing in Paul's argument?",
+   "Functional analysis asks what each part contributes, so if you pull it out and nothing changes, it wasn't pulling weight."
+  ],
+  "Relational analysis": [
+   "The relational analysis matters more than the org chart here, since the pastor depends on his assistant, not the other way around.",
+   "You're treating these two claims as independent, but a quick relational analysis shows yours depends on mine.",
+   "Relational analysis looks at the links between things, like who depends on whom and whether it runs both ways."
+  ],
+  "Comparative analysis": [
+   "I did a comparative analysis of three competitor pages on the same dimensions, offer and proof, and ours is the only one without proof.",
+   "A fair comparative analysis of Christianity and Islam uses the same questions for both, not my best against your worst.",
+   "Comparative analysis can stay descriptive, it's about lining up similarities and differences before anyone picks a winner."
+  ],
+  "Gap analysis": [
+   "My gap analysis on her account is short: she wants automated reviews, and right now nothing triggers after a visit.",
+   "I ran a gap analysis on my debate prep, and the hole is definitions, not evidence.",
+   "Gap analysis compares where you are with where you want to be and flags the differences that actually matter."
+  ],
+  "Root-cause analysis": [
+   "We've patched that form three times, so it's time for a root-cause analysis instead of another quick fix.",
+   "You keep blaming the last hire, but a root-cause analysis would ask why the board keeps hiring the same way.",
+   "Root-cause analysis keeps asking what upstream condition keeps producing the symptom, not just what broke today."
+  ],
+  "Mechanistic analysis": [
+   "You say it drives engagement, so give me the mechanistic analysis: what does the user actually do, and what happens next?",
+   "My mechanistic analysis of the referral flow: the client gets a text, taps the link, and the reward fires when the friend books.",
+   "Mechanistic analysis doesn't stop at 'this causes that,' it shows the parts and steps that make it happen."
+  ],
+  "Systems analysis": [
+   "Each fix looked fine alone, but the systems analysis showed the reminder texts were flooding the front desk with reschedules.",
+   "You're judging one doctrine in isolation, and a systems analysis would ask how it interacts with the rest of the framework.",
+   "Systems analysis looks at how the parts interact, including feedback loops nobody sees when they study one part alone."
+  ],
+  "Constraint analysis": [
+   "My constraint analysis says a phone app is off the table, so the real choice is between two web builds.",
+   "Run the constraint analysis on your plan: with two volunteers and no budget, which parts are even possible?",
+   "Constraint analysis maps the limits first, so you're only weighing options that can actually happen."
+  ],
+  "Assumption analysis": [
+   "Your argument rules out miracles before looking at any evidence, and that's exactly where assumption analysis would push.",
+   "I ran an assumption analysis on the launch plan and found we'd assumed her list actually opens email.",
+   "Assumption analysis means naming what's being taken for granted and checking what breaks if it turns out false."
+  ],
+  "Stakeholder analysis": [
+   "Do a stakeholder analysis before the rollout, because the pastor approves it but the volunteers decide whether it survives.",
+   "My stakeholder analysis on this client missed her business partner, and he's the one who signs off on spend.",
+   "Stakeholder analysis is mapping who's involved, what they want, and how much pull they've got over the decision."
+  ],
+  "Counterfactual reasoning": [
+   "Try some counterfactual reasoning with me: if the tomb wasn't empty, why didn't anyone just produce the body?",
+   "Counterfactual reasoning check: if we'd launched without the email sequence, would sales really have looked any different?",
+   "Counterfactual reasoning changes one past condition and asks what would've played out differently."
+  ],
+  "Scenario analysis": [
+   "My scenario analysis on the price change covers the case where clients leave and the case where they upgrade.",
+   "You're only planning for the best case, so give me a scenario analysis where attendance drops by a third.",
+   "Scenario analysis isn't predicting one future, it's testing your plan against several plausible ones."
+  ],
+  "Conceptual analysis": [
+   "We keep saying 'faith' and meaning different things, so let's do some conceptual analysis: is it trust, or belief without evidence?",
+   "A conceptual analysis of 'premium' for this brand showed it meant fast and personal, not expensive.",
+   "Conceptual analysis unpacks what an idea means, what it's made of, and when the word actually applies."
+  ],
+  "Conceptual differentiation": [
+   "You're conflating 'unproven' with 'false,' and that conceptual differentiation is basically the whole argument.",
+   "The client used 'leads' and 'customers' like they were the same, so a little conceptual differentiation fixed half the report.",
+   "Conceptual differentiation is pointing out the real contrast between two ideas that look like twins."
+  ],
+  "Taxonomy construction": [
+   "There's no good way to sort these client requests yet, so I'm doing taxonomy construction before anyone files another one.",
+   "Taxonomy construction builds the category system itself, while classification just uses one that's already there.",
+   "Constructing a taxonomy of objections helped me see that historical objections need a different kind of answer than moral ones."
+  ],
+  "Prioritization": [
+   "My prioritization this week is simple: anything blocking a client's launch goes ahead of my own system builds.",
+   "We can't get to all twelve objections tonight, so let's prioritize the two your whole case actually rests on.",
+   "Prioritization isn't judging what's good, it's deciding what goes first when you can't do it all."
+  ],
+  "Operationalization": [
+   "'Engaged member' sounds nice, but until we operationalize it, like attended twice and opened the app, we can't track it.",
+   "How would you operationalize 'harm' in your moral argument, so we can actually check whether it applies here?",
+   "Operationalization is turning a fuzzy concept into something you can observe, measure or actually do."
+  ],
+  "Hypothesis testing": [
+   "Okay, that's a theory, so let's do some hypothesis testing: if the gospels were written late, what would we expect to find in them?",
+   "Hypothesis testing just means you take one specific explanation and check it against observations that could actually prove it wrong.",
+   "Time for some hypothesis testing on my hunch that the price scared people off, so I'm running the page at two prices for a week."
+  ],
+  "Evidence appraisal": [
+   "Before we fight about the conclusion, can we do some evidence appraisal? One anonymous blog post isn't the same as a peer-reviewed study.",
+   "Evidence appraisal is asking whether a source is relevant, whether you can trust it, whether it's enough, and where it stops being useful.",
+   "My evidence appraisal on the client's testimonials wasn't pretty, since three came from family and none mention an actual result."
+  ],
+  "Causal mapping": [
+   "If you think one thing explains the decline, try causal mapping it, because leadership, culture and attendance all feed each other.",
+   "Causal mapping is drawing out which factors you think push on which, so you can trace the pathways instead of just arguing about them.",
+   "I did some causal mapping on the funnel and saw slow follow-up was hurting reviews, and the weak reviews were dragging down the ads."
+  ],
+  "Recontextualization": [
+   "You're recontextualizing a line from a letter to one church as a rule for everyone, and the meaning shifts when you move it like that.",
+   "Recontextualization means you drop an idea into a new setting and watch whether it still means the same thing or gets more useful.",
+   "A little recontextualization paid off: I took a restaurant punch-card idea, put it in a coaching business, and it turned into a referral program."
+  ],
+  "Model building": [
+   "We're both guessing until we do some model building on how a person actually changes their mind about something like this.",
+   "Model building is making a simplified picture of the parts and how they connect, so you've got something you can actually reason with.",
+   "I spent the morning model building the client's sales process, just lead, call, proposal and close, and the bottleneck jumped right out."
+  ],
+  "Trade-off analysis": [
+   "You keep calling the policy all upside, but nobody's done the trade-off analysis on what it costs the small churches.",
+   "Trade-off analysis isn't about ranking options, it's about seeing what you give up on one goal when you push harder on another.",
+   "Quick trade-off analysis on the landing page: shorter copy gets more clicks, but those leads show up colder and book less."
+  ],
+  "Sensitivity analysis": [
+   "Your whole estimate hangs on that one growth rate, so let's run a sensitivity analysis and see if it survives at half that number.",
+   "A sensitivity analysis asks how much your answer moves when you nudge one input, so you find out which assumptions are carrying the weight.",
+   "I ran a sensitivity analysis on the pricing model, and profit barely moves with ad spend but swings hard with close rate."
+  ],
+  "Boundary analysis": [
+   "We're talking past each other because we skipped the boundary analysis: are we counting Western churches or the whole world?",
+   "Boundary analysis is asking what's inside your system and what you've left out, since moving that line can change the answer.",
+   "Doing some boundary analysis on this project, I realized email follow-up was never in scope, which is exactly why nobody owned it."
+  ],
+  "Term of art": [
+   "Hold on, 'faith' is a term of art in theology, and it doesn't mean believing without evidence the way you're using it.",
+   "When a lawyer says 'consideration,' that's a term of art, and it means something exchanged in a contract, not being thoughtful.",
+   "'Conversion' is a term of art in my work, so I define it for every new client before we start talking numbers."
+  ],
+  "Mechanism": [
+   "You've shown the two things happen together, but what's the mechanism? How does one actually produce the other?",
+   "A mechanism is the how, the actual chain of steps or interactions that gets you from a cause to a result.",
+   "The mechanism behind this email working is simple: the subject line names a fear, so people open it to check if it's about them."
+  ],
+  "Phenomenon": [
+   "Revivals are a real phenomenon, and we can argue about the explanation later, but first let's describe what actually happened.",
+   "A phenomenon is just something you can observe happening, and it's sitting there waiting for someone to describe or explain it.",
+   "There's an odd phenomenon in this client's data, where bookings spike every Tuesday and nobody knows why yet."
+  ],
+  "Principle": [
+   "If that's your principle, it has to hold across cases, so why doesn't it apply when your own side does the same thing?",
+   "A principle is a general rule you carry from case to case, so it's different from a one-off call you made in the moment.",
+   "The principle I keep applying with clients is one page, one job, and it's held up on every build so far."
+  ],
+  "Process / workflow": [
+   "You're blaming the outcome, but the problem's in the process, because nobody checked the sources before that article went out.",
+   "A workflow is just the ordered steps and handoffs that turn an input into an outcome, like an order becoming a delivered package.",
+   "I mapped this client's booking workflow and found three handoffs where leads just sit there with nobody assigned."
+  ],
+  "Structure / architecture": [
+   "Your argument has a structure problem, since the conclusion is propping up the premises instead of the other way around.",
+   "When I say architecture, I mean how the parts are arranged and connected, not what any single part does on its own.",
+   "The site's architecture is the real issue here, with the pricing page buried three clicks deep under the blog."
+  ],
+  "Relationship / dependency": [
+   "There's a dependency in your argument you haven't defended, because your second point only works if the first one's true.",
+   "A relationship is any connection between two things, and a dependency is the kind where one can't work without the other.",
+   "Before I touch this automation I'm checking every dependency, since the review request relies on the appointment tag firing first."
+  ],
+  "Pattern": [
+   "That's three times you've changed the definition when the evidence got close, and I'm starting to see a pattern.",
+   "A pattern is something that keeps showing up in the same shape across cases, so once you spot it you can start predicting it.",
+   "The pattern behind my slow weeks is obvious now, because they always follow a week where I skipped Monday planning."
+  ],
+  "Model / framework": [
+   "Your framework only has room for material causes, so of course it can't find anything outside them.",
+   "A model simplifies how something works, while a framework gives you a structure for organizing your thinking or your actions.",
+   "I use a rough model of the buyer's journey with every client, and it's wrong in the details but useful enough to plan with."
+  ],
+  "Method / technique": [
+   "I'm not objecting to your conclusion yet, I'm objecting to your method, because pulling single verses won't tell you what the author meant.",
+   "A method is your overall repeatable approach, and a technique is one specific move you use inside it.",
+   "My method for copy is research first and draft second, and one technique I always use is reading the headline out loud."
+  ],
+  "Effect / outcome": [
+   "You're pointing to a good outcome, but that doesn't prove your policy caused it, since a lot of other things changed that year.",
+   "An effect is a change something produces, so when you say X has an effect, you're making a causal claim.",
+   "The outcome this client actually wants isn't more traffic, it's more booked calls, so that's what I'm measuring."
+  ],
+  "Constraint / governing condition": [
+   "Whatever you propose has to work under the real constraint here, which is that most of these churches can't afford staff.",
+   "A constraint limits what's possible, and the governing condition is the one that ends up shaping every other choice.",
+   "The governing condition on this build is the client's two-week launch date, so anything that can't ship by then waits."
+  ],
+  "Hypothesis": [
+   "That's a fair hypothesis, but what would you accept as evidence against it?",
+   "A hypothesis is a claim you hold provisionally, something you think might be true until you've checked it against what you can observe.",
+   "My working hypothesis is that her leads go cold because nobody texts them in the first hour."
+  ],
+  "Assumption": [
+   "Your whole argument rests on the assumption that miracles can't happen, and that's the very thing we're debating.",
+   "An assumption is something you're treating as true for now so you can keep reasoning, even though you haven't proven it.",
+   "I was assuming the client's audience skewed young, and the analytics showed most of them are over fifty."
+  ],
+  "Concept / idea": [
+   "I think we're working with two different concepts of freedom, so let's pin down which one you mean.",
+   "A concept is a mental category, like trust or leverage, that helps you recognize the thing when you run into it.",
+   "The core idea for this campaign is that she isn't selling coaching, she's selling her clients their evenings back."
+  ],
+  "Decision / judgment": [
+   "I'm not questioning your decision so much as the judgment behind it, because the criteria you used don't fit this situation.",
+   "A decision is the choice you land on, and a judgment is the assessment of the information that got you there.",
+   "Taking that rush job was a bad decision, and I want to figure out exactly where my judgment slipped."
+  ],
+  "Comparison matrix": [
+   "Instead of trading one-liners about which translation's better, let's put them in a comparison matrix and line them up on the same criteria.",
+   "A comparison matrix puts your options in rows and the same criteria in columns, so every cell is apples to apples.",
+   "I built a comparison matrix of three CRM options for the client, and the price column alone ended the debate."
+  ],
+  "Evidence matrix": [
+   "If you've got four explanations for the empty tomb, let's put them in an evidence matrix against the facts both sides accept and see which holds up.",
+   "An evidence matrix lists the claims down the side and the evidence across the top, and each cell says supports, contradicts or unclear.",
+   "I made an evidence matrix for why sales dropped, and the bad-season theory had almost nothing supporting it."
+  ],
+  "Decision matrix": [
+   "We could argue all night, or we could build a decision matrix, weight what actually matters, and let the scores talk.",
+   "A decision matrix is a comparison that actually picks, because you score each option against weighted criteria and add it up.",
+   "My decision matrix for which project to take next put the smaller one on top, which honestly surprised me."
+  ],
+  "Synthesis matrix": [
+   "You're citing one study, but I've got a synthesis matrix of twelve, and when you read across all of them the effect is tiny.",
+   "A synthesis matrix isn't just a list of sources, it lines them up against the same questions so you can see what they say together.",
+   "For this research I'm keeping a synthesis matrix, with each customer interview as a row and the main pain points as columns."
+  ],
+  "Concept map": [
+   "Let's sketch a concept map of what you mean by religion, because you're linking it to things I'd never connect it to.",
+   "A concept map is a web of ideas with labeled links, so you see how the ideas relate, not what order things happen in.",
+   "Before writing the course I drew a concept map of every idea in it, and two modules turned out to be the same idea."
+  ],
+  "Causal diagram": [
+   "Draw me a causal diagram of your claim, because I think your arrow points the wrong way and the effect might be driving the cause.",
+   "A causal diagram is boxes and arrows where every arrow means this causes that, which makes it stricter than a concept map.",
+   "My causal diagram for the client's churn showed slow onboarding causing confusion, and confusion causing cancellations."
+  ],
+  "Causal loop diagram": [
+   "Your one-way story misses the feedback, so let's sketch a causal loop diagram where distrust feeds isolation and isolation feeds distrust.",
+   "A causal loop diagram shows variables feeding back on each other, and you mark each loop as reinforcing or balancing.",
+   "Drawing a causal loop diagram made my burnout obvious: overwork cut my planning time, which caused rework, which caused more overwork."
+  ],
+  "Process flowchart": [
+   "If your hiring process is that fair, show me the process flowchart, because I want to see what happens on every no branch.",
+   "A process flowchart uses boxes for actions and diamonds for decisions, so you can see every branch a workflow can take.",
+   "I sketched a process flowchart for the client's intake form, and the not-a-fit branch led absolutely nowhere."
+  ],
+  "Cycle diagram": [
+   "You keep drawing this as a straight line, but a cycle diagram fits better, since the same four stages come back around every year.",
+   "A cycle diagram is stages in a closed loop with no end point, like the seasons or a monthly reporting rhythm.",
+   "I put the client's content calendar in a cycle diagram, plan, record, publish, review, and then right back to plan."
+  ],
+  "Flywheel": [
+   "Calling that a flywheel is a stretch, because it repeats, sure, but nothing in it makes the next turn any easier.",
+   "A flywheel is a cycle where each stage strengthens the next one, so the momentum builds the more it turns.",
+   "The flywheel I'm building for my agency is simple: great work earns referrals, and referrals bring clients who let me do bigger work."
+  ],
+  "Timeline": [
+   "Let's get the timeline straight first, because Paul's letters were written before the gospels, and that matters for your argument.",
+   "A timeline puts events on an actual time axis, so you keep the order and can see the gaps between them.",
+   "I built a timeline of the client's launch, and the email sequence was set to start two days before the page went live."
+  ],
+  "Stage model": [
+   "You're treating grief like it has a deadline, but a stage model only says what order the phases come in, not when.",
+   "A stage model lays out phases in order, like awareness, consideration and decision, without pinning any of them to dates.",
+   "My stage model for client onboarding has four phases, and I don't care how many days each one takes, just that nobody skips one."
+  ],
+  "Decision tree": [
+   "Let's decision-tree this: if they say no to the ask, what's your next move, and if they say yes, what follows?",
+   "A decision tree branches on every choice or chance event, and each endpoint shows where that path actually lands you.",
+   "I sketched a decision tree for the client's launch: if early signups stall, we push the webinar; if they spike, we open the second offer."
+  ],
+  "Taxonomy": [
+   "You're lumping cults and denominations together, so let's get the taxonomy straight before we argue about either one.",
+   "A taxonomy sorts things into classes with clear parent and child relations, like genus and species in biology.",
+   "I need a taxonomy for my skills folder, because right now nobody can tell which ones are personas and which are references."
+  ],
+  "Hierarchy diagram": [
+   "Pull up the hierarchy diagram and show me who actually signs off, because I keep hearing three different answers.",
+   "A hierarchy diagram puts things in levels, so you can see rank, authority or what sits inside what at a glance.",
+   "I drew a hierarchy diagram of the church's ministry teams so the pastor could see which leaders report to whom."
+  ],
+  "Systems map": [
+   "Before you blame the sales page, look at the systems map, because the follow-up emails are feeding back into this too.",
+   "A systems map shows the parts, the boundary and how they push on each other, not the step order a flowchart gives you.",
+   "My systems map of the client's business showed reviews, referrals and the booking calendar all tangled together."
+  ],
+  "Dependency graph": [
+   "Your argument rests on three claims, and if we draw the dependency graph, two of them both hang on the same premise.",
+   "In a dependency graph an arrow means one thing needs another first, which is why it's great for spotting bottlenecks.",
+   "The dependency graph made it obvious: nothing on the new site can launch until the client sends the domain login."
+  ],
+  "Stakeholder map": [
+   "You keep talking about what the board wants, but your stakeholder map leaves out the volunteers who actually run the program.",
+   "A stakeholder map plots people by how much influence and interest they've got, then shows how they connect to each other.",
+   "I built a stakeholder map before pitching the church, since the pastor decides but the admin assistant controls the calendar."
+  ],
+  "Argument map": [
+   "Let me argument-map what you just said, because I count one claim, two reasons and an objection you haven't answered.",
+   "An argument map links each claim to its reasons, evidence and objections, so you can see what's actually holding it up.",
+   "I made an argument map of the Kalam debate from last night and found my second premise had no evidence hanging off it."
+  ],
+  "Logic model": [
+   "Your outreach plan skips a step; walk me through the logic model from what you're spending to the outcome you expect.",
+   "A logic model runs inputs to activities to outputs to outcomes, and it spells out the assumptions linking each one.",
+   "The client's logic model assumed more traffic means more bookings, and that's the assumption the data didn't back up."
+  ],
+  "Framework": [
+   "That's a useful framework for sorting objections, but it doesn't explain why people hold them in the first place.",
+   "A framework gives you a repeatable set of principles to work through, while a model tries to explain how something works.",
+   "I'm turning my client intake questions into a framework so every discovery call covers the same ground."
+  ],
+  "Conceptual model": [
+   "My conceptual model of why people leave church is different from yours; I think belonging drops before belief does.",
+   "A conceptual model is a simplified picture of the key concepts and how you think they relate, so you can reason about it.",
+   "I sketched a conceptual model of why the funnel leaks, linking trust, price clarity and how fast we follow up."
+  ],
+  "Rubric": [
+   "If we're going to judge whose argument was stronger, let's agree on a rubric first instead of going by vibes.",
+   "A rubric spells out the criteria and what poor, decent and excellent look like for each, so grading stays consistent.",
+   "I wrote a rubric for headlines, scoring clarity, specificity and curiosity from one to four, and it sped up my edits."
+  ],
+  "Checklist": [
+   "Did you actually run the checklist, or did you just feel like everything was published?",
+   "A checklist is yes or no on each item; it catches what you forgot, but it won't tell you how good the work is.",
+   "My launch checklist has the live URL check on phone and desktop, because that's the step I used to skip."
+  ],
+  "Narrative synthesis": [
+   "You've listed six studies, but you haven't given me a narrative synthesis of what they mean together.",
+   "A summary just shrinks the sources, while a narrative synthesis weaves them into one explanation of how they connect and what follows.",
+   "After ten client calls I wrote a narrative synthesis showing the pricing complaints and the slow replies were really one trust problem."
+  ],
+  "Analytical brief": [
+   "Skip the history lesson and give me the analytical brief: what's the question, what's the evidence, and what do you recommend?",
+   "An analytical brief is short and built around a decision, so it leads with the question and ends with a clear recommendation.",
+   "I sent the pastor a one-page analytical brief on whether to move the prayer line to texting, with my recommendation up top."
+  ],
+  "Trade-off matrix": [
+   "Neither of us is wrong here, so let's lay it out in a trade-off matrix and see what each option costs.",
+   "A trade-off matrix shows what each option gains and sacrifices across your criteria, without forcing a single score.",
+   "My trade-off matrix for the rebuild showed WordPress wins on flexibility but loses on how fast the client can edit it."
+  ],
+  "Typology": [
+   "Not every skeptic is the same; I use a rough typology of the hurt, the curious and the hostile, and each needs a different answer.",
+   "A typology picks a couple of defining dimensions and names the types that fall out, which is different from a full taxonomy.",
+   "I built a typology of my clients by how hands-on they want to be, and it changed how I write their updates."
+  ],
+  "Worked example": [
+   "You keep saying the argument is circular, so give me a worked example and show me exactly where it loops.",
+   "A worked example walks through every step of applying a method, so you see the decisions and not just the answer.",
+   "I knew what a logic model was in theory, but I needed a worked example on a real client before I could build one."
+  ],
+  "Causal": [
+   "Through a causal lens, the question isn't whether attendance dropped but what actually made it drop.",
+   "The causal lens asks why something happens and what change would produce a different effect.",
+   "Looking at the client's churn through a causal lens, slow onboarding shows up as the condition behind most cancellations."
+  ],
+  "Structural": [
+   "Put a structural lens on your argument and you'll see the conclusion isn't even connected to your second point.",
+   "A structural lens looks at the parts, how they're arranged and where the boundaries and handoffs sit.",
+   "The structural lens on this landing page shows the problem: the form sits above the section that explains the offer."
+  ],
+  "Functional": [
+   "From a functional lens, that verse is doing a different job in the chapter than the one you're assigning it.",
+   "The functional lens asks what role each part plays and what it contributes to the whole.",
+   "I looked at the email sequence through a functional lens and realized two emails were doing the same job."
+  ],
+  "Temporal": [
+   "Through a temporal lens, your timeline doesn't hold, since that letter was written decades after the event you're citing.",
+   "A temporal lens focuses on sequence, timing and how things change over stages.",
+   "Taking the temporal lens to the funnel, most leads go cold in the first two days, so that's where follow-up has to land."
+  ],
+  "Relational": [
+   "With a relational lens, you're missing that her objection is really about her pastor, not the doctrine itself.",
+   "The relational lens looks between the parts, at the connections, dependencies and how they interact.",
+   "Using a relational lens on my skills, the trouble isn't any single skill, it's how the handoffs between them break."
+  ],
+  "Hierarchical": [
+   "Through a hierarchical lens, you're treating a local church policy like it outranks the denomination's own rules.",
+   "The hierarchical lens focuses on levels, authority, nesting and which category sits under which.",
+   "With a hierarchical lens on the site menu, I saw services and sub-services were sitting at the same level."
+  ],
+  "Mechanistic": [
+   "That's a correlation; give me the mechanistic lens, the actual steps by which prayer would cause that outcome in your view.",
+   "A mechanistic lens follows the chain of activities that produces an effect, so don't force it onto a simple description.",
+   "Looking at referrals with a mechanistic lens, the real driver is the thank-you text that goes out after the session."
+  ],
+  "Comparative": [
+   "Use the comparative lens fairly: hold Christianity and Islam to the same historical standard, dimension by dimension.",
+   "The comparative lens lines up options on the same dimensions so you can see real differences and shared traits.",
+   "Through a comparative lens, the two booking pages differ mainly in how early they show the price."
+  ],
+  "Systemic": [
+   "From a systemic lens, banning that one book won't do much, because the whole culture keeps feeding the same ideas back in.",
+   "A systemic lens watches feedback loops, boundaries and the effects that only show up when parts interact.",
+   "Under a systemic lens, discounting the client's services would pull in bargain hunters who never refer anybody."
+  ],
+  "Behavioral": [
+   "Through a behavioral lens, people don't leave over arguments; they stop showing up, and the reasons come later.",
+   "The behavioral lens zooms in on what people actually do, their habits, incentives and decisions.",
+   "I put a behavioral lens on the client's leads and saw they open texts within minutes but ignore email for days."
+  ],
+  "Epistemic": [
+   "Let's switch to an epistemic lens: how do you actually know that, and how confident should either of us be?",
+   "The epistemic lens is about knowledge claims, what counts as evidence and how much uncertainty is left.",
+   "With an epistemic lens on my report, I had to admit two of the numbers were guesses, not verified data."
+  ],
+  "Normative": [
+   "You've described what churches do; I'm asking a normative question, which is what they ought to do.",
+   "A normative lens judges things against explicit values or standards, so it's about ought rather than is.",
+   "Through the normative lens, the real question for the client is whether that urgency tactic is fair to buyers."
+  ],
+  "Micro level": [
+   "At the micro level your point holds, since that one verse says it, but the chapter as a whole is going somewhere else.",
+   "Micro-level analysis zooms into individual parts or local interactions, like one conversation instead of the whole church.",
+   "I went to the micro level on the checkout page and found the button label alone was confusing people."
+  ],
+  "Meso level": [
+   "You're jumping from one person to the whole culture, but the meso level is where it happens, inside churches and small groups.",
+   "The meso level sits between the individual and the whole system, looking at the handoffs and group mechanisms that connect them.",
+   "The meso level is where my client's problem lives: the front desk and the booking team just aren't passing leads cleanly."
+  ],
+  "Macro level": [
+   "At the macro level the trend is clear; church attendance is falling nationally even if your congregation is growing.",
+   "A macro-level view looks at the whole system and its overall pattern instead of the individual pieces.",
+   "Zooming out to the macro level, my agency's real shift this year is from building pages to running full systems."
+  ],
+  "Meta level": [
+   "Let's go meta level for a second: we're arguing past each other because we don't agree on what counts as evidence.",
+   "The meta-level lens examines the rules and assumptions governing the inquiry itself, not the content of the answer.",
+   "On a meta level, my review process was flawed, because I was grading my own drafts in the same pass I wrote them."
+  ],
+  "Scope": [
+   "Let's scope this to the first century, because pulling in every modern denomination is going to drown the question.",
+   "The scope lens sets the boundaries of an inquiry, who, when and which question, so it doesn't drift.",
+   "I scoped the audit to the booking funnel only, otherwise I'd have ended up rewriting the client's whole site."
+  ],
+  "Criteria": [
+   "Before we argue about whose answer is better, what criteria are we using to judge it?",
+   "The criteria lens makes you spell out the standards first, so a judgment isn't just a gut feeling.",
+   "I set the criteria for picking a CRM up front, cost, texting and ease of use, and the choice became obvious."
+  ],
+  "Constraints": [
+   "Your solution sounds great, but under the constraints lens, the church has no staff to run it.",
+   "The constraints lens names the hard limits up front, so you only consider answers that can actually work.",
+   "Looking at the build through the constraints lens, no new subscriptions and a two-week deadline ruled out half the options."
+  ]
+ }
 }

@@ -159,6 +159,18 @@ function resolveTerm(t){
   return {ready:true, status:st, definition:str(t.definition), distinction:str(t.distinction), trigger:str(t.trigger), say_it:lines(t.say_it)};
 }
 const tagged = tag => TERMS.filter(t => t.tags.includes(tag));
+/* Example sentences for a Cognitive Lab lexicon entry: the word bank's cognitive_usage list, or the same-named bank term's say-it lines. */
+function cogUsage(name){
+  const u = DATA.lex && DATA.lex.cognitive_usage;
+  if (u && u[name]) return lines(u[name]);
+  const t = TERMS.find(x => x.name.toLowerCase() === String(name).toLowerCase());
+  return t ? lines(t.say_it) : [];
+}
+function usageBlock(body, name, lv){
+  const us = cogUsage(name); if (!us.length) return;
+  body.append(h('h' + Math.min(lv, 6), {class:'el'}, 'Say it - in a sentence'));
+  us.forEach((s, i) => body.append(h('p', {class:'sayit'}, h('span', null, s), speakBtn(s, 'Hear example ' + (i + 1) + ' for ' + name))));
+}
 
 /* ===== prompt-composition helpers (unchanged engine behaviour) ===== */
 const MIXRE = /^Perform (.+?) on the (.+?)(?:, using an? (.+?) lens)?; present (?:the result as )?an? (.+?)\.$/i;
@@ -592,7 +604,7 @@ function renderCogLexicon(v){
       const det = h('details', {class:'entry'});
       const sum = h('summary', null, h('span', null, h('h' + nl, {class:'en'}, x.name), h('span', {class:'d'}, x.definition)));
       sum.insertAdjacentHTML('beforeend', ICON.chev);
-      const eb = entryBody(x, true, nl + 1); const hr = hearRow(x.name); if (hr) eb.prepend(hr);
+      const eb = entryBody(x, true, nl + 1); const hr = hearRow(x.name); if (hr) eb.prepend(hr); usageBlock(eb, x.name, nl + 1);
       det.append(sum, eb);
       ul.append(h('li', null, det));
     });
